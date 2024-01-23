@@ -8,14 +8,16 @@
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
 	<h3>Секции</h3>
 	<p><b>Денис</b> - header, footer, intro
+	</p>
 		<img src="https://skrinshoter.ru/sNv4f1mFbUF?a" alt=""> <br>
 		<img src="https://skrinshoter.ru/sNvGmioMIqO?a" alt=""><br>
 		<img src="https://skrinshoter.ru/sNvn7RrIbn2?a" alt="">
-	</p>
 	<p><b>Юля</b> - advantages, catalog
-	<img src="https://skrinshoter.ru/sNvJlsIbZUZ?a" alt="">
-	<img src="https://skrinshoter.ru/sNvvvtAzWhl?a" alt=""></p>
+</p>
+	<img src="https://skrinshoter.ru/sNvJlsIbZUZ?a" alt=""><br>
+	<img src="https://skrinshoter.ru/sNvvvtAzWhl?a" alt="">
 	<p><b>Таня</b> - special-products, sertificates
-	<img src="https://skrinshoter.ru/sNvYMOacDEV?a" alt="">
-	<img src="https://skrinshoter.ru/sNvNuAZbYMT?a" alt=""></p>
+	</p>
+	<img src="https://skrinshoter.ru/sNvYMOacDEV?a" alt=""><br>
+	<img src="https://skrinshoter.ru/sNvNuAZbYMT?a" alt="">
 </div>
