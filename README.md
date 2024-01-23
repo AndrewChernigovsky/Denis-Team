@@ -9,7 +9,7 @@
 	<h3>Секции</h3>
 	<p><b>Денис</b> - header, footer, intro
 	</p>
-		<img src="https://skrinshoter.ru/sNv4f1mFbUF?a" alt=""> <br>
+		<img src="https://d1.skrinshoter.ru/s/230124/4f1mFbUF.png?download=1&name=Скриншот-23-01-2024 16:23:15.png" alt=""> <br>
 		<img src="https://skrinshoter.ru/sNvGmioMIqO?a" alt=""><br>
 		<img src="https://skrinshoter.ru/sNvn7RrIbn2?a" alt="">
 	<p><b>Юля</b> - advantages, catalog
