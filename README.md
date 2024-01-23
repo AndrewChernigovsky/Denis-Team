@@ -6,7 +6,7 @@
 	<p>Юля - фронтенд-разработчик</p>
 	<p>Таня - фронтенд-разработчик</p>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-	<h3>Главная страница</h3>
+	<h3>Секции</h3>
 	<p>Денис - header, footer</p>
 	<p>Юля - advantages, catalog</p>
 	<p>Таня - special-products, sertificates</p>
