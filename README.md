@@ -10,14 +10,14 @@
 	<p><b>Денис</b> - header, footer, intro
 	</p>
 		<img src="https://d1.skrinshoter.ru/s/230124/4f1mFbUF.png?download=1&name=Скриншот-23-01-2024 16:23:15.png" alt=""> <br>
-		<img src="https://skrinshoter.ru/sNvGmioMIqO?a" alt=""><br>
-		<img src="https://skrinshoter.ru/sNvn7RrIbn2?a" alt="">
+		<img src="https://d1.skrinshoter.ru/s/230124/GmioMIqO.png?download=1&name=Скриншот-23-01-2024 16:24:06.png" alt=""><br>
+		<img src="https://d1.skrinshoter.ru/s/230124/n7RrIbn2.png?download=1&name=Скриншот-23-01-2024 16:25:31.png" alt="">
 	<p><b>Юля</b> - advantages, catalog
 </p>
-	<img src="https://skrinshoter.ru/sNvJlsIbZUZ?a" alt=""><br>
-	<img src="https://skrinshoter.ru/sNvvvtAzWhl?a" alt="">
+	<img src="https://d1.skrinshoter.ru/s/230124/JlsIbZUZ.png?download=1&name=Скриншот-23-01-2024 16:26:14.png" alt=""><br>
+	<img src="https://d1.skrinshoter.ru/s/230124/vvtAzWhl.png?download=1&name=Скриншот-23-01-2024 16:26:48.png" alt="">
 	<p><b>Таня</b> - special-products, sertificates
 	</p>
-	<img src="https://skrinshoter.ru/sNvYMOacDEV?a" alt=""><br>
-	<img src="https://skrinshoter.ru/sNvNuAZbYMT?a" alt="">
+	<img src="https://d1.skrinshoter.ru/s/230124/YMOacDEV.png?download=1&name=Скриншот-23-01-2024 16:27:20.png" alt=""><br>
+	<img src="https://d1.skrinshoter.ru/s/230124/NuAZbYMT.png?download=1&name=Скриншот-23-01-2024 16:28:08.png" alt="">
 </div>
