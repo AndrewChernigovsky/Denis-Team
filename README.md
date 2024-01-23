@@ -7,7 +7,15 @@
 	<p><b>Таня</b> - фронтенд-разработчик</p>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
 	<h3>Секции</h3>
-	<p><b>Денис</b> - header, footer</p>
-	<p><b>Юля</b> - advantages, catalog</p>
-	<p><b>Таня</b> - special-products, sertificates</p>
+	<p><b>Денис</b> - header, footer, intro
+		<img src="https://skrinshoter.ru/sNv4f1mFbUF?a" alt=""> <br>
+		<img src="https://skrinshoter.ru/sNvGmioMIqO?a" alt=""><br>
+		<img src="https://skrinshoter.ru/sNvn7RrIbn2?a" alt="">
+	</p>
+	<p><b>Юля</b> - advantages, catalog
+	<img src="https://skrinshoter.ru/sNvJlsIbZUZ?a" alt="">
+	<img src="https://skrinshoter.ru/sNvvvtAzWhl?a" alt=""></p>
+	<p><b>Таня</b> - special-products, sertificates
+	<img src="https://skrinshoter.ru/sNvYMOacDEV?a" alt="">
+	<img src="https://skrinshoter.ru/sNvNuAZbYMT?a" alt=""></p>
 </div>
