@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+.page {
+	&__body {
+		background-color: rgb(255, 255, 255);
+		font-family: "Lato", "Arial", sans-serif;
+		font-size: 14px;
+	}
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 10px;
+	border: 1px solid black;
+	height: 200px;
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}

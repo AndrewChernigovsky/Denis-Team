@@ -21,6 +21,7 @@ const {
 	src,
 	dest,
 	series,
+	parallel,
 	watch
 } = gulp;
 
@@ -70,7 +71,7 @@ export function html() {
 		.pipe(dest(PATH_BUILD));
 };
 export function html2Pages() {
-	return src([`${PATH_SOURCE}/html/pages/*.html`])
+	return src([`${PATH_SOURCE}/html/pages/**/*.html`])
 		.pipe(fileinclude({
 			prefix: '@@',
 			basepath: '@file'
@@ -142,6 +143,20 @@ export function startServer() {
 	watch(`${PATH_SOURCE}/styles/**/*.scss`, series(processStyles, reloadServer));
 }
 
+export function copyImages() {
+	return src(`${PATH_SOURCE}/images/**/*`)
+		.pipe(dest(`${PATH_BUILD}/images/`));
+}
+export function copyFonts() {
+	return src(`${PATH_SOURCE}/fonts/**/*`)
+		.pipe(dest(`${PATH_BUILD}/fonts/`));
+}
+
+export function copyAssets(cb) {
+
+	parallel(copyImages, copyFonts)(cb);
+}
+
 export function reloadServer(done) {
 	server.reload();
 	done();
@@ -152,5 +167,5 @@ export function runDev(done) {
 }
 export function runBuild(done) {
 	isDevelopment = false;
-	series(deleteBuild, createBuild, createPages, html, html2Pages, startServer)(done);
+	series(deleteBuild, createBuild, createPages, html, html2Pages, processStyles, copyAssets, startServer)(done);
 }
