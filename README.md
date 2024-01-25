@@ -17,9 +17,12 @@
 <img src="https://skrinshoter.ru/s/250124/g8BtMYz6.png?download=1&name=Скриншот-25-01-2024 18:03:11.png" alt=""><br>
 <img src="https://skrinshoter.ru/s/250124/akah4u7i.png?download=1&name=Скриншот-25-01-2024 18:06:02.png" alt=""><br>
 
- </li><li>появился установщик, загрузка файлов у меня идет из браузера на рабочий стол, у вас установщик будет там куда вы его скачали <br><img src="https://skrinshoter.ru/s/250124/xTYUnhde.png?download=1&name=Скриншот-25-01-2024 18:06:41.png" alt=""></li>
- </li><li>жмем далее<br><img src="https://skrinshoter.ru/s/250124/ukVyt7uL.png?download=1&name=Скриншот-25-01-2024 18:08:28.png" alt=""></li>
- <li><li><p style="color: red;">Обязательно проверяем эти галочки, если их нет, то нужно поставить</p><img src="https://skrinshoter.ru/s/250124/ACghTYvE.png?download=1&name=Скриншот-25-01-2024 18:09:04.png" alt=""></li>
+ </li>
+ <li>появился установщик, загрузка файлов у меня идет из браузера на рабочий стол, у вас установщик будет там куда вы его скачали <br><img src="https://skrinshoter.ru/s/250124/xTYUnhde.png?download=1&name=Скриншот-25-01-2024 18:06:41.png" alt="">
+ </li>
+ </li>
+ <li>жмем далее<br><img src="https://skrinshoter.ru/s/250124/ukVyt7uL.png?download=1&name=Скриншот-25-01-2024 18:08:28.png" alt=""></li>
+ <li><p style="color: #123155;">Обязательно проверяем эти галочки, если их нет, то нужно поставить</p><img src="https://skrinshoter.ru/s/250124/ACghTYvE.png?download=1&name=Скриншот-25-01-2024 18:09:04.png" alt=""></li>
 <li>Далее просто оставляем по умолчанию выбранные настройки и жмем всегда далее, пока не установится программа.</li>
 </ol><br>
 
