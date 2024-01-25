@@ -10,18 +10,18 @@
 <li>Для начала нужно скачать сам Гит, скачать можно по <a href="https://git-scm.com/downloads">этой ссылке</a><br>
 <p>Выберите установщик согласно своей ОС, также учитывайте, что важна архитектура 32 или 64 и т д</p><br>
 <img src="https://skrinshoter.ru/s/250124/qAVSPu5q.png?download=1&name=Скриншот-25-01-2024 17:59:55.png" alt=""><br>
-<img src="https://skrinshoter.ru/s/250124/7RdfpPIJ.png?download=1&name=Скриншот-25-01-2024 18:01:31.png" alt="">
+<!-- <img src="https://skrinshoter.ru/s/250124/7RdfpPIJ.png?download=1&name=Скриншот-25-01-2024 18:01:31.png" alt=""> -->
 </li>
 <li>Я скачал для примера установщик с архитектурой 64 <br>
 
 <img src="https://skrinshoter.ru/s/250124/g8BtMYz6.png?download=1&name=Скриншот-25-01-2024 18:03:11.png" alt=""><br>
 <img src="https://skrinshoter.ru/s/250124/akah4u7i.png?download=1&name=Скриншот-25-01-2024 18:06:02.png" alt=""><br>
 
- </li><li><img src="https://skrinshoter.ru/s/250124/xTYUnhde.png?download=1&name=Скриншот-25-01-2024 18:06:41.png" alt=""></li>
- </li><li><img src="https://skrinshoter.ru/s/250124/ukVyt7uL.png?download=1&name=Скриншот-25-01-2024 18:08:28.png" alt=""></li>
- <li><img src="https://skrinshoter.ru/s/250124/ACghTYvE.png?download=1&name=Скриншот-25-01-2024 18:09:04.png" alt=""></li>
+ </li><li>появился установщик, загрузка файлов у меня идет из браузера на рабочий стол, у вас установщик будет там куда вы его скачали <br><img src="https://skrinshoter.ru/s/250124/xTYUnhde.png?download=1&name=Скриншот-25-01-2024 18:06:41.png" alt=""></li>
+ </li><li>жмем далее<br><img src="https://skrinshoter.ru/s/250124/ukVyt7uL.png?download=1&name=Скриншот-25-01-2024 18:08:28.png" alt=""></li>
+ <li><li><p style="color: red;">Обязательно проверяем эти галочки, если их нет, то нужно поставить</p><img src="https://skrinshoter.ru/s/250124/ACghTYvE.png?download=1&name=Скриншот-25-01-2024 18:09:04.png" alt=""></li>
 <li>Далее просто оставляем по умолчанию выбранные настройки и жмем всегда далее, пока не установится программа.</li>
-</ol>
+</ol><br>
 
 Для того чтобы все работало вам нужно установить <a href="https://nodejs.org/en">Node.js</a><br/>
 
