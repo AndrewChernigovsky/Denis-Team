@@ -5,8 +5,6 @@ import {
 	modal
 } from "./tasks/modal.js";
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
 	theme();
 	modal();
