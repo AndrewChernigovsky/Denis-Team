@@ -8,6 +8,7 @@ import copyAssets from './gulp-tasks/copyAssets.js';
 import config from './gulp-config.js';
 
 import ghpages from 'gh-pages';
+import opn from 'opn';
 
 const ghpages1 = ghpages;
 
@@ -22,6 +23,7 @@ export function publishGithubPages(cb) {
 			console.log('Ваша страница успешно опубликована на GitHub Pages!');
 		}
 	});
+	opn('https://andrewchernigovsky.github.io/Denis-Team/');
 	cb();
 }
 export function runDev(done) {
