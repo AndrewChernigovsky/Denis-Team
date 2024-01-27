@@ -12,7 +12,10 @@
 	"author": "Andrey Andreevich",
 	"license": "ISC",
 	"devDependencies": {
+		"@babel/core": "^7.23.9",
+		"@babel/preset-env": "^7.23.9",
 		"autoprefixer": "^10.4.17",
+		"babelify": "^10.0.0",
 		"browser-sync": "^3.0.2",
 		"gulp-file-include": "^2.0.1",
 		"gulp-plumber": "^1.2.1",
@@ -24,6 +27,12 @@
 		"sass": "^1.70.0"
 	},
 	"dependencies": {
-		"gulp": "^4.0.2"
+		"browserify": "^17.0.0",
+		"gulp": "^4.0.2",
+		"gulp-notify": "^4.0.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-uglify": "^3.0.2",
+		"vinyl-buffer": "^1.0.1",
+		"vinyl-source-stream": "^2.0.0"
 	}
 }

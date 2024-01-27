@@ -16,6 +16,13 @@ import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import plumber from 'gulp-plumber';
 
+import uglify from 'gulp-uglify';
+import rename from 'gulp-rename';
+import browserify from 'browserify';
+import source from 'vinyl-source-stream';
+import notify from 'gulp-notify';
+import buffer from 'vinyl-buffer';
+
 const sass = gulpSass(dartSass);
 const {
 	src,
@@ -81,9 +88,30 @@ export function html2Pages() {
 
 
 
-export function createJS() {
-	return src([`${PATH_SOURCE}/js/**/*.js`])
-		.pipe(dest(`${PATH_BUILD}/js/`));
+async function createJS() {
+	return (
+		browserify({
+			entries: `${PATH_SOURCE}/js/script.js`,
+		})
+		.transform('babelify', {
+			presets: ['@babel/preset-env'],
+			sourceMaps: true,
+			global: true
+		})
+		.bundle()
+		.on(
+			'error',
+			notify.onError({
+				title: 'JS compiling error',
+				wait: true,
+			})
+		)
+		.pipe(source('script.js'))
+		.pipe(buffer())
+		.pipe(uglify())
+		.pipe(rename('script.min.js'))
+		.pipe(gulp.dest(`${PATH_BUILD}/js`))
+	);
 }
 
 export function processStyles() {
