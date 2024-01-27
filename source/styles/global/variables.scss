@@ -1,6 +1,20 @@
-$primary-font: "Oswald", "Arial", sans-serif;
+$primary-font: 'gropled',
+'Arial',
+sans-serif;
+$secondary-font: 'Arial',
+'Roboto',
+sans-serif;
 
 $base-color-text: #000000;
+$base-color-background: #000000;
+$base-color-text-inverse: #ffffff;
+$base-color-background-inverse: #ffffff;
+
+$base-theme-no-active: #fd9d00;
+
+$base-background-light: #e2de80;
+$base-background-light-pink: #ffb5d9;
+$base-theme-background: #123555;
 
 $tablet: 768px;
-$desktop: 1440px;
+$desktop: 1680px;

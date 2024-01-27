@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 *,
 *::after,
 *::before {
@@ -6,17 +8,18 @@
 
 .page {
 	&__body {
-		background-color: rgb(0, 0, 0);
-		font-family: "Lato", "Arial", sans-serif;
+		background-color: $base-color-background;
+		font-family: $primary-font;
 		font-size: 14px;
 		margin: 0;
 		padding: 0;
 		transition: 0.3s ease-in-out;
-		color: black;
+		color: $base-color-background;
 
 		.overlay {
 			&.active {
-				background-color: rgba(255, 255, 255, 0.8);
+				background-color: $base-color-background-inverse;
+				opacity: .8;
 				min-height: 100vh;
 				min-width: 100vw;
 				position: absolute;
@@ -32,11 +35,14 @@
 }
 
 .container {
-	max-width: 1440px;
+	max-width: 1680px;
 	margin: 0 auto;
 	padding: 0 10px;
-	border: 1px solid black;
 	min-height: 200px;
+
+	@media screen and (min-width: $desktop) {
+		padding: 0 80px;
+	}
 }
 
 img {
