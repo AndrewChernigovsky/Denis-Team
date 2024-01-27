@@ -79,6 +79,13 @@ export function html2Pages() {
 		.pipe(dest(`${PATH_BUILD}/pages/`));
 };
 
+
+
+export function createJS() {
+	return src([`${PATH_SOURCE}/js/**/*.js`])
+		.pipe(dest(`${PATH_BUILD}/js/`));
+}
+
 export function processStyles() {
 	return src(`${PATH_SOURCE}/styles/*.scss`, {
 			sourcemaps: isDevelopment
@@ -141,6 +148,7 @@ export function startServer() {
 	watch(`${PATH_SOURCE}/html/**/*.html`, series(html, html2Pages, reloadServer));
 	watch(`${PATH_SOURCE}/*.html`, series(html, html2Pages, reloadServer));
 	watch(`${PATH_SOURCE}/styles/**/*.scss`, series(processStyles, reloadServer));
+	watch(`${PATH_SOURCE}/js/**/*.js`, series(createJS, reloadServer));
 }
 
 export function copyImages() {
@@ -163,9 +171,9 @@ export function reloadServer(done) {
 }
 
 export function runDev(done) {
-	series(deleteBuild, createBuild, createPages, html, html2Pages, processStyles, startServer)(done);
+	series(deleteBuild, createBuild, createPages, html, html2Pages, processStyles, createJS, startServer)(done);
 }
 export function runBuild(done) {
 	isDevelopment = false;
-	series(deleteBuild, createBuild, createPages, html, html2Pages, processStyles, copyAssets, startServer)(done);
+	series(deleteBuild, createBuild, createPages, html, html2Pages, processStyles, copyAssets, createJS, startServer)(done);
 }
