@@ -29,5 +29,5 @@ export function runDev(done) {
 }
 export function runBuild(done) {
 	config.isDev = false;
-	config.series(deleteBuild, createBuild, config.parallel(html, styles, scripts), copyAssets, startServer, publishGithubPages)(done);
+	config.series(deleteBuild, createBuild, config.parallel(html, styles, scripts), copyAssets)(done);
 }
