@@ -1,3 +1,59 @@
-.advantages {
+@import './../global/variables.scss';
 
+.advantages {
+	padding: 180px 0;
+
+	.container {
+		padding: 0;
+	}
+
+	&__title {
+		padding-left: 80px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		gap: 20px;
+
+		li {
+			flex-basis: calc(50% - 20px);
+			padding: 100px 80px;
+			background-color: $base-background-light;
+			border-radius: 80px;
+
+			&.theme-active {
+				background-color: $base-theme-background;
+			}
+
+			p,
+			h3 {
+				color: $base-color-text;
+			}
+
+			p,
+			h3 {
+				&.theme-active {
+					color: $base-color-text-inverse
+				}
+			}
+
+			&:not(:first-of-type) {
+				background-color: $base-background-light-pink;
+
+				&.theme-active {
+					background-color: $base-theme-background;
+				}
+
+			}
+
+			.container {
+				padding: 0;
+			}
+		}
+	}
 }

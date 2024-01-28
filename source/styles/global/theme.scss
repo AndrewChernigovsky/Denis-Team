@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 a,
 p,
 span,
@@ -8,18 +10,19 @@ h4,
 h5,
 h6 {
 	transition: 0.3s ease-in-out;
-	color: rgb(255, 255, 255);
+	color: $base-color-text-inverse;
 
 	&.theme-active {
-		color: rgb(0, 0, 0);
+		color: $base-color-text;
+		font-family: $secondary-font;
 	}
 }
 
 .header {
-	background-color: black;
+	background-color: $base-color-background;
 
 	&.theme-active {
-		background-color: rgb(255, 255, 255);
+		background-color: $base-color-background-inverse;
 	}
 }
 
@@ -39,7 +42,6 @@ h6 {
 
 	.sun-theme,
 	.moon-theme {
-		color: yellow;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -48,7 +50,7 @@ h6 {
 
 	.sun-theme {
 		opacity: 1;
-		color: rgb(255, 157, 0);
+		color: $base-theme-no-active;
 	}
 
 	.moon-theme {
@@ -59,22 +61,23 @@ h6 {
 #themeToggle.theme-active {
 
 	.sun-theme {
-		color: rgb(255, 157, 0);
+		color: $base-theme-no-active;
 		opacity: 0;
 	}
 
 	.moon-theme {
 		opacity: 1;
-		color: rgb(0, 0, 0);
+		color: $base-color-text;
 	}
 }
 
 .page {
 	&__body {
-		background-color: rgb(0, 0, 0);
+		background-color: $base-color-background;
 
 		&.theme-active {
-			background-color: #ffffff;
+			background-color: $base-color-text-inverse;
+			;
 		}
 	}
 }

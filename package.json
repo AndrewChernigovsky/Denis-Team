@@ -7,7 +7,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "gulp runDev",
-		"build": "gulp runBuild"
+		"build": "gulp runBuild && gulp publishGithubPages"
 	},
 	"author": "Andrey Andreevich",
 	"license": "ISC",
@@ -23,6 +23,7 @@
 		"gulp-plumber": "^1.2.1",
 		"gulp-postcss": "^9.1.0",
 		"gulp-sass": "^5.1.0",
+		"opn": "^6.0.0",
 		"postcss": "^8.4.33",
 		"postcss-csso": "^6.0.1",
 		"postcss-url": "^10.1.3",
