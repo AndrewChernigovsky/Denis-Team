@@ -1,13 +1,23 @@
 .special-products {
+  &__list {
+    outline: 4px solid rgb(245, 92, 26);
+    outline-offset: -4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
   &__item {
     width: 493px;
     /* background-color: $base-background-light; */
     background-color: #e2de80;
     border-radius: 40px;
     padding: 30px;
+    margin-bottom: 20px;
     & p {
       color: #000;
-      font-family: $primary-font;
+      /* font-family: $primary-font; */
+      font-family: 'gropled', 'Arial';
       font-size: 56px;
       font-weight: 700;
       line-height: 70px;

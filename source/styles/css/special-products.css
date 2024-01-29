@@ -1,13 +1,28 @@
+.special-products__list {
+  outline: 4px solid rgb(245, 92, 26);
+  outline-offset: -4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
 .special-products__item {
   width: 493px;
   /* background-color: $base-background-light; */
   background-color: #e2de80;
   border-radius: 40px;
   padding: 30px;
+  margin-bottom: 20px;
 }
 .special-products__item p {
   color: #000;
-  font-family: gropled;
+  /* font-family: $primary-font; */
+  font-family: "gropled", "Arial";
   font-size: 56px;
   font-weight: 700;
   line-height: 70px;
