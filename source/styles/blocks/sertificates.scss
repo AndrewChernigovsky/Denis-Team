@@ -1,3 +1,17 @@
 .sertificates {
-  
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    margin-right: 20px;
+  }
+  &__item:last-child{
+    margin-right: 0;
+  }
+  &__item-img {
+    width: 493px;
+    height: 348px;
+  }
 }
