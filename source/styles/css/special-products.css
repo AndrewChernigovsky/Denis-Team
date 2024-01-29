@@ -1,6 +1,4 @@
 .special-products__list {
-  outline: 4px solid rgb(245, 92, 26);
-  outline-offset: -4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,6 +25,9 @@
   font-weight: 700;
   line-height: 70px;
 }
+.special-products__item a {
+  text-decoration: none;
+}
 .special-products__item-img {
   width: 433px;
   height: 433px;
@@ -39,6 +40,14 @@
   font-weight: 700;
   line-height: 70px;
   margin-bottom: 40px;
+}
+.special-products__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .special-products__item-price span {
   color: #000;

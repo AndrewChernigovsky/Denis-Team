@@ -1,7 +1,5 @@
 .special-products {
   &__list {
-    outline: 4px solid rgb(245, 92, 26);
-    outline-offset: -4px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -23,6 +21,9 @@
       line-height: 70px;
     }
   }
+  &__item a {
+    text-decoration: none;
+  }
   &__item-img {
     width: 433px;
     height: 433px;
@@ -35,6 +36,10 @@
     font-weight: 700;
     line-height: 70px;
     margin-bottom: 40px;
+  }
+  &__item-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
   &__item-price {
     & span {
