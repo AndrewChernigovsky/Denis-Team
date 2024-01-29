@@ -1,2 +1,60 @@
 .intro {
+
+	background-color: blue;
+	min-height: 900px;
+	position: relative;
+	overflow: hidden;
+
+	&__wrapper {
+		min-height: inherit;
+		overflow: hidden;
+		padding: 20px;
+		max-width: 2500px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+
+	.decors-1 {
+		img {
+			position: absolute;
+			top: -800px;
+			right: 0;
+			// z-index: -1;
+		}
+	}
+
+	.decors-2 {
+		img {
+			position: absolute;
+			bottom: -900px;
+			left: 0;
+			// z-index: -1;
+		}
+	}
+
+	.decors-3 {
+		// position: relative;
+
+		img {
+			position: absolute;
+			top: -612px;
+			left: 155px;
+			// z-index: -1;
+		}
+	}
+
+	.decors-4 {
+		// position: relative;
+
+		img {
+			position: absolute;
+			top: 222px;
+			right: -320px;
+		}
+	}
 }
