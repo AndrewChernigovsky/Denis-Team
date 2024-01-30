@@ -1,22 +1,40 @@
-.intro {
+@import './../global/variables.scss';
 
-	background-color: blue;
-	min-height: 900px;
+.intro {
 	position: relative;
 	overflow: hidden;
+	padding-bottom: 230px;
 
 	&__wrapper {
-		min-height: inherit;
-		overflow: hidden;
-		padding: 20px;
-		max-width: 2500px;
-		margin: 0 auto;
-		position: relative;
+		background: linear-gradient(120deg, $base-background-light, $base-background-light-pink);
+
+		min-height: 900px;
 	}
 
 	.container {
 		position: relative;
 		z-index: 1;
+		min-height: inherit;
+		display: grid;
+		align-content: center;
+	}
+
+	&__info {
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 10px;
+
+		h2,
+		p,
+		a {
+			color: $base-color-text;
+		}
+
+		.secondary-title {
+			margin-bottom: 20px;
+		}
 	}
 
 	.decors-1 {
@@ -24,37 +42,49 @@
 			position: absolute;
 			top: -800px;
 			right: 0;
-			// z-index: -1;
+			z-index: -1;
 		}
 	}
 
 	.decors-2 {
-		img {
+
+		&.theme-active {
+			color: $base-color-text-inverse;
+		}
+
+		img,
+		svg {
 			position: absolute;
-			bottom: -900px;
-			left: 0;
-			// z-index: -1;
+			bottom: -828px;
+			left: -401px;
+			z-index: -1;
 		}
 	}
 
 	.decors-3 {
-		// position: relative;
-
 		img {
 			position: absolute;
 			top: -612px;
-			left: 155px;
-			// z-index: -1;
+			left: -257px;
+			z-index: -1;
 		}
 	}
 
 	.decors-4 {
-		// position: relative;
-
 		img {
 			position: absolute;
-			top: 222px;
-			right: -320px;
+			top: 209px;
+			right: -301px;
+			z-index: -1;
+		}
+	}
+
+	.decors-5 {
+		img {
+			position: absolute;
+			top: 315px;
+			right: -273px;
+			z-index: -1;
 		}
 	}
 }
