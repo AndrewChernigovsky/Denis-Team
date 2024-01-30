@@ -26,6 +26,7 @@
   width: 433px;
   height: 433px;
   margin-bottom: 40px;
+  border-radius: 20px;
 }
 .special-products__item-title {
   color: #000000;
