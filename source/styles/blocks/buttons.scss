@@ -1,5 +1,5 @@
 .button {
-
+    width: 177px;
     padding: 14px 30px;
     justify-content: center;
     align-items: center;
@@ -13,12 +13,16 @@
     font-weight: 700;
     line-height: 32px; 
 }
-.auth {
-    border: 2px solid #FFF;
+.white{
+    background-color: #FFF;
+    a{
+        color: black;
+    }
 }
-.nav__list {
-border: #FFF solid 1px;
-}
-.button a{
-    color: aqua;
+
+.dark{
+    background-color: #000000;
+    a {
+        color: #FFF;
+    }
 }
