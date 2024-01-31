@@ -1,8 +1,37 @@
 @import './../global/variables.scss';
+
+.reviews__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid red;
+}
+
 .reviews__title {
     font-family: $primary-font;
     font-size: 74px;
-    font-style: normal;
     font-weight: 700;
     line-height: 84px; 
  }
+
+ .reviews__item-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+ } 
+
+ .reviews__item-title {
+    font-family: "gropled";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 70px; 
+    letter-spacing: 0.64px;
+ }
+
+.reviews__item-description {
+    font-family: "gropled";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: 0.64px;
+ }
+
