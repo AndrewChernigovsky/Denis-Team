@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>catalog</title>
+	<link rel="stylesheet" href="./../css/styles.css">
+</head>
+<body class="page__body">
+@@include('./../layout/header.html')
+<main>
+@@include('./../sections/catalog.html')
+<section class="special-products">
+	<div class="container">
+		<h2 class="secondary-title" recommendations__title data-theme="dark">Персональные рекомендации</h2>
+		<ul class="special-products__list">
+			@@include('./../blocks/product-items/product-3.html')
+			@@include('./../blocks/product-items/product-2.html')
+			@@include('./../blocks/product-items/product-5.html')
+		</ul>
+	</div>
+</section>
+</main>
+@@include('./../layout/footer.html')
+<script type="module" src="./../js/script.min.js"></script>
+</body>
+</html>
