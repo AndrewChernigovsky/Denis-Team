@@ -6,11 +6,17 @@
     gap: 20px;
 }
 
+.reviews-wrapper { 
+    vertical-align: top;
+}
+ 
+
 .reviews__item {
     background-color: $base-backround-dark;
     border-radius: 40px;
     width: 750px;
     display: flex;
+    padding: 30px;
 }
 
 .reviews__title {
@@ -24,6 +30,7 @@
     width: 120px;
     height: 120px;
     border-radius: 20px;
+    margin-right: 30px;
  } 
 
  .reviews__item-title {
@@ -32,6 +39,7 @@
     font-weight: 700;
     line-height: 70px; 
     letter-spacing: 0.64px;
+    margin: 0;
  }
 
 .reviews__item-description {
@@ -40,5 +48,6 @@
     font-weight: 700;
     line-height: 32px; 
     letter-spacing: 0.64px;
+    margin: 0;
  }
 
