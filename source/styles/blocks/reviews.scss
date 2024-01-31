@@ -4,6 +4,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    padding: 0;  
+    margin: 0;
+    margin-bottom: 180px;
+    list-style-type: none;
 }
 
 .reviews-wrapper { 
