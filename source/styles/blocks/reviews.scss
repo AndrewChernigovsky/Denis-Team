@@ -3,7 +3,14 @@
 .reviews__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 2px solid red;
+    gap: 20px;
+}
+
+.reviews__item {
+    background-color: $base-backround-dark;
+    border-radius: 40px;
+    width: 750px;
+    display: flex;
 }
 
 .reviews__title {
@@ -20,7 +27,7 @@
  } 
 
  .reviews__item-title {
-    font-family: "gropled";
+    font-family: $secondary-font;
     font-size: 32px;
     font-weight: 700;
     line-height: 70px; 
@@ -28,7 +35,7 @@
  }
 
 .reviews__item-description {
-    font-family: "gropled";
+    font-family: $secondary-font;
     font-size: 18px;
     font-weight: 700;
     line-height: 32px; 
