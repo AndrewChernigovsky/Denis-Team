@@ -3,8 +3,8 @@
 
   &__list {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
   &__item {
     margin-right: 20px;
@@ -15,5 +15,6 @@
   &__item-img {
     width: 493px;
     height: 348px;
+    border-radius: 20px;
   }
 }
