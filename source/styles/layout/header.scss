@@ -1,9 +1,24 @@
 .header {
 
+
+	overflow: hidden;
+
 	.container {
+		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 10%;
+	}
+
+	.decors-circle {
+		position: absolute;
+		top: -400px;
+		left: -255px;
+	}
+
+	.logo {
+		position: relative;
+		z-index: 1;
 	}
 }

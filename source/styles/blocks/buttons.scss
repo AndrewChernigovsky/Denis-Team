@@ -1,0 +1,28 @@
+.button {
+
+	padding: 14px 30px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 100px;
+	border: 2px solid var(--stroke, rgba(233, 237, 244, 0.35));
+	;
+	color: var(--light-white, #FFF);
+	font-family: Manrope;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px;
+}
+
+.auth {
+	border: 2px solid #FFF;
+}
+
+.nav__list {
+	border: #FFF solid 1px;
+}
+
+.button a {
+	color: aqua;
+}
