@@ -7,9 +7,14 @@ import {
 import {
 	renameAllPaths
 } from "./tasks/renameAllPaths.js";
+import {
+	slider
+}
+from "./tasks/product-slider.js";
 
 document.addEventListener('DOMContentLoaded', () => {
 	theme();
 	modal();
 	renameAllPaths();
+	slider();
 })
