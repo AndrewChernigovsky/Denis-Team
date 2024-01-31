@@ -34,20 +34,22 @@
  } 
 
  .reviews__item-title {
-    font-family: $secondary-font;
+    font-family: $text-font;
     font-size: 32px;
-    font-weight: 700;
-    line-height: 70px; 
+    font-weight: 400;
     letter-spacing: 0.64px;
     margin: 0;
+    margin-bottom: 30px;
+    line-height: 32px;         
  }
 
 .reviews__item-description {
-    font-family: $secondary-font;
+    font-family: $text-font;
     font-size: 18px;
-    font-weight: 700;
-    line-height: 32px; 
+    font-weight: 400;
     letter-spacing: 0.64px;
     margin: 0;
+    opacity: 70%;
+    line-height: 32px;         
  }
 
