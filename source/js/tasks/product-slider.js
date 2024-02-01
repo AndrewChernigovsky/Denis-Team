@@ -12,34 +12,34 @@ const active = 'active';
 
 export function slider() {
 
-	counterButton.addEventListener('click', () => {
-		thumbsAll.forEach((el, index) => {
-			if (index === thumbsAll.length - 1) {
+	// counterButton.addEventListener('click', () => {
+	// 	thumbsAll.forEach((el, index) => {
+	// 		if (index === thumbsAll.length - 1) {
 
-				let sizes = el.getBoundingClientRect();
-				let start = Date.now();
-				let timer = setInterval(function () {
-					let timePassed = Date.now() - start;
+	// 			let sizes = el.getBoundingClientRect();
+	// 			let start = Date.now();
+	// 			let timer = setInterval(function () {
+	// 				let timePassed = Date.now() - start;
 
-					if (timePassed >= 2000) {
-						clearInterval(timer);
-						return;
-					}
-					draw(timePassed);
-				}, 20);
+	// 				if (timePassed >= 2000) {
+	// 					clearInterval(timer);
+	// 					return;
+	// 				}
+	// 				draw(timePassed);
+	// 			}, 20);
 
-				function draw(timePassed) {
-					let size = timePassed / 5;
-					if (size <= sizes.height) {
-						thumbsWrapper.style.marginTop = '-' + (size + 'px');
+	// 			function draw(timePassed) {
+	// 				let size = timePassed / 5;
+	// 				if (size <= sizes.height) {
+	// 					thumbsWrapper.style.marginTop = '-' + (size + 'px');
 
-					}
-				}
+	// 				}
+	// 			}
 
 
-			}
-		})
-	})
+	// 		}
+	// 	})
+	// })
 
 	counterNum.textContent = thumbsAll.length - 6;
 
