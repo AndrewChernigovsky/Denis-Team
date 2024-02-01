@@ -12,9 +12,14 @@ import {
 }
 from "./tasks/product-slider.js";
 
+import {
+	counterItems
+} from "./tasks/counterItems.js";
+
 document.addEventListener('DOMContentLoaded', () => {
 	theme();
 	modal();
-	renameAllPaths();
+	// renameAllPaths();
 	slider();
+	counterItems();
 })

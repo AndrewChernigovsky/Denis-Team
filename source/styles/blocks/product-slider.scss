@@ -1,15 +1,10 @@
 .product-slider {
 
-	.container {
-		// display: flex;
-		// align-items: flex-start;
-		// justify-content: space-between;
-		// gap: 10px;
-	}
+	padding-bottom: 180px;
 
 	&__wrapper {
 		display: grid;
-		grid-template-columns: 100px minmax(25%, 640px) 1fr;
+		grid-template-columns: 100px minmax(25%, 650px) 1fr;
 		gap: 10px;
 	}
 
@@ -35,7 +30,7 @@
 			display: grid;
 			gap: 10px;
 			overflow-y: scroll;
-			max-height: 800px;
+			max-height: 650px;
 			padding-bottom: 100px;
 			position: relative;
 			-ms-overflow-style: none;
