@@ -24,12 +24,12 @@
     align-items: flex-start;
     flex-shrink: 0;
     border-radius: 40px;
-    background: var(--dark-gray-20, rgba(144, 154, 168, 0.20));
+    background: $base-backround-dark;
     backdrop-filter: blur(40px);
 }
 .footer__title,.footer__phone-link {
     padding-top: 10px;
-    color: var(--light-white, #FFF);
+    color: $base-color-text-inverse;
     font-family: "gropled";
     font-size: 56px;
     font-style: normal;
@@ -55,7 +55,7 @@
     margin-top: -8px;
 }
 .social-list__item {
-    color: var(--light-white-70, rgba(255, 255, 255, 0.70));
+    color: $base-color-text-inverse;
     font-family: Manrope;
     font-size: 26px;
     font-style: normal;
