@@ -36,18 +36,22 @@
 				</li>
 			</ul>
 			<ul class="auth">
-				<li>
+				<li class="button button--dark">
 					<a class="link auth__sign" href="#" id="signIn" data-theme="dark">Регистрация</a>
 				</li>
-				<li>
+				<li class="button button--white">
 					<a class="link auth__login" href="#" data-theme="dark">Вход</a>
 				</li>
 			</ul>
+			<!-- <div class="auth">
+				<a class="button auth__sign" href="#" id="signIn" data-theme="dark">Регистрация</a>
+				<a class="button auth__login" href="#" data-theme="dark">Вход</a>
+			</div> -->
 			<button type="button" id="themeToggle" data-theme="dark">
 				<div class="button-icon-theme  sun-theme">
 					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-					<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
 					<svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="50px" viewBox="0 0 108.336 108.336" xml:space="preserve" stroke="currentColor">
 
 						<g id="SVGRepo_bgCarrier" stroke-width="0" />
@@ -75,9 +79,9 @@
 						<g>
 							<circle fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" cx="32.003" cy="32.005" r="16.001" />
 							<path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M12.001,31.997c0-2.211-1.789-4-4-4H4c-2.211,0-4,1.789-4,4
-		s1.789,4,4,4h4C10.212,35.997,12.001,34.208,12.001,31.997z" />
+						s1.789,4,4,4h4C10.212,35.997,12.001,34.208,12.001,31.997z" />
 							<path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M12.204,46.139l-2.832,2.833c-1.563,1.562-1.563,4.094,0,5.656
-		c1.562,1.562,4.094,1.562,5.657,0l2.833-2.832c1.562-1.562,1.562-4.095,0-5.657C16.298,44.576,13.767,44.576,12.204,46.139z" />
+						c1.562,1.562,4.094,1.562,5.657,0l2.833-2.832c1.562-1.562,1.562-4.095,0-5.657C16.298,44.576,13.767,44.576,12.204,46.139z" />
 							<path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M32.003,51.999c-2.211,0-4,1.789-4,4V60c0,2.211,1.789,4,4,4
 		s4-1.789,4-4l-0.004-4.001C36.003,53.788,34.21,51.999,32.003,51.999z" />
 							<path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M51.798,46.143c-1.559-1.566-4.091-1.566-5.653-0.004
@@ -86,7 +90,7 @@
 		c-2.203-0.008-3.992,1.781-3.992,3.992c-0.008,2.211,1.789,4,3.992,4h4.001c2.219,0.008,4-1.789,4-4
 		C64.002,29.79,62.217,27.997,60.006,27.997z" />
 							<path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M51.798,17.859l2.828-2.829c1.574-1.566,1.562-4.094,0-5.657
-		c-1.559-1.567-4.09-1.567-5.652-0.004l-2.829,2.836c-1.562,1.555-1.562,4.086,0,5.649C47.699,19.426,50.239,19.418,51.798,17.859z" />
+							c-1.559-1.567-4.09-1.567-5.652-0.004l-2.829,2.836c-1.562,1.555-1.562,4.086,0,5.649C47.699,19.426,50.239,19.418,51.798,17.859z" />
 							<path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M32.003,11.995c2.207,0.016,4-1.789,4-3.992v-4
 		c0-2.219-1.789-4-4-4c-2.211-0.008-4,1.781-4,3.993l0.008,4.008C28.003,10.206,29.792,11.995,32.003,11.995z" />
 							<path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M12.212,17.855c1.555,1.562,4.079,1.562,5.646-0.004
@@ -97,90 +101,151 @@
 				</div>
 			</button>
 		</nav>
+		<img class="decors-circle" src="./images/vectors/decors-3.svg">
 	</div>
 </header>
 
 		<main>
-			<section class="catalog">
+			<section class="product-slider">
+	<h2 class="visually-hidden">Product Slider</h2>
 	<div class="container">
-		<h2 class="secondary-title" data-theme="dark">Каталог товаров</h2>
-		<ul class="catalog__products">
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-1.html">
-					<h3 class="third-title catalog__products-title">ВВГнг</h3>
-					<img src="./images/products/catalog/product-1.png" alt>
-				</a>
-			</li>
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-2.html">
-					<h3 class="third-title catalog__products-title">ППГнг</h3>
-					<img src="./images/products/catalog/product-2.png" alt>
-				</a>
-			</li>
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-3.html">
-					<h3 class="third-title catalog__products-title">КГ</h3>
-					<img src="./images/products/catalog/product-3.png" alt>
-				</a>
-			</li>
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-4.html">
-					<h3 class="third-title catalog__products-title">ПуГВ</h3>
-					<img src="./images/products/catalog/product-4.png" alt>
-				</a>
-			</li>
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-5.html">
-					<h3 class="third-title catalog__products-title">СИП</h3>
-					<img src="./images/products/catalog/product-5.png" alt>
-				</a>
-			</li>
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-6.html">
-					<h3 class="third-title catalog__products-title">ПВС</h3>
-					<img src="./images/products/catalog/product-6.png" alt>
-				</a>
-			</li>
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-7.html">
-					<h3 class="third-title catalog__products-title">ВБШв</h3>
-					<img src="./images/products/catalog/product-7.png" alt>
-				</a>
-			</li>
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-8.html">
-					<h3 class="third-title catalog__products-title">МКЭШ</h3>
-					<img src="./images/products/catalog/product-8.png" alt>
-				</a>
-			</li>
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-9.html">
-					<h3 class="third-title catalog__products-title">АВВГ</h3>
-					<img src="./images/products/catalog/product-9.png" alt>
-				</a>
-			</li>
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-10.html">
-					<h3 class="third-title catalog__products-title">ВПП</h3>
-					<img src="./images/products/catalog/product-10.png" alt>
-				</a>
-			</li>
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-11.html">
-					<h3 class="third-title catalog__products-title">РПШ</h3>
-					<img src="./images/products/catalog/product-11.png" alt>
-				</a>
-			</li>
-			<li>
-				<a class="catalog__products-link" href="./pages/products/product-12.html">
-					<h3 class="third-title catalog__products-title">Ретро</h3>
-					<img src="./images/products/catalog/product-12.png" alt>
-				</a>
-			</li>
-		</ul>
+		<div class="product-slider__wrapper">
+			<ul class="slider-list">
+				<li data-full="1" class="active"><img src="./../../../images/products/product_1.png" alt></li>
+				<li data-full="2"><img src="./../../../images/products/product_2.png" alt></li>
+				<li data-full="3"><img src="./../../../images/products/product_3.png" alt></li>
+				<li data-full="4"><img src="./../../../images/products/product_1.png" alt></li>
+				<li data-full="5"><img src="./../../../images/products/product_1.png" alt></li>
+				<li data-full="6"><img src="./../../../images/products/product_1.png" alt></li>
+				<li data-full="7"><img src="./../../../images/products/product_1.png" alt></li>
+				<li data-full="8"><img src="./../../../images/products/product_1.png" alt></li>
+				<li data-full="8"><img src="./../../../images/products/product_1.png" alt></li>
+			</ul>
+			<ul class="slider-list-thumbs">
+				<div class="thumbs-wrapper">
+					<li data-thumb="1" class="active"><img src="./../../../images/products/product_1.png" alt></li>
+					<li data-thumb="2"><img src="./../../../images/products/product_2.png" alt></li>
+					<li data-thumb="3"><img src="./../../../images/products/product_3.png" alt></li>
+					<li data-thumb="4"><img src="./../../../images/products/product_1.png" alt></li>
+					<li data-thumb="5"><img src="./../../../images/products/product_1.png" alt></li>
+					<li data-thumb="6"><img src="./../../../images/products/product_1.png" alt></li>
+					<li data-thumb="7"><img src="./../../../images/products/product_1.png" alt></li>
+					<li data-thumb="8"><img src="./../../../images/products/product_1.png" alt></li>
+					<li data-thumb="8"><img src="./../../../images/products/product_1.png" alt></li>
+				</div>
+				<li class="slider-list-thumbs__counter"><span class="counter">ещё <span class="int">6</span></span></li>
+			</ul>
+			<div class="characteristics">
+				<table class="characteristics__table">
+					<th class="third-title">Характеристики</th>
+					<tbody>
+						<tr class="characteristics__row">
+							<td class="base-text">Артикул</td>
+							<td class="base-text">xz.y3.1438</td>
+						</tr>
+						<tr class="characteristics__row">
+							<td class="base-text">Напряжение</td>
+							<td class="base-text">0.5 кВ</td>
+						</tr>
+						<tr class="characteristics__row">
+							<td class="base-text">Сечение</td>
+							<td class="base-text">130</td>
+						</tr>
+						<tr class="characteristics__row">
+							<td class="base-text">Изоляция</td>
+							<td class="base-text">ПВХ</td>
+						</tr>
+						<tr class="characteristics__row">
+							<td class="base-text">Материал жил</td>
+							<td class="base-text">медный</td>
+						</tr>
+						<tr class="characteristics__row">
+							<td class="base-text">Цвет</td>
+							<td class="base-text">черный</td>
+						</tr>
+					</tbody>
+					<th class="third-title">Наличие</th>
+					<tbody>
+						<tr class="characteristics__row">
+							<td class="base-text">В наличие</td>
+							<td class="base-text">727 шт.</td>
+						</tr>
+						<tr class="characteristics__row">
+							<td class="base-text">Возможность</td>
+							<td class="base-text">можно заказать</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="characteristics__result"> <span>Общая цена </span><span>7 340 ₽</span></p>
+
+				<div class="characteristics__buttons-wrapper">
+
+					<div class="characteristics__counter">
+						<button type="button">-</button>
+						<input type="number" value="1" name="int" min="0" max="100">
+						<button type="button">+</button>
+					</div>
+					<button type="button" class="characteristics__cart">Добавить в корзину</button>
+				</div>
+
+			</div>
+		</div>
 	</div>
 </section>
 
+			<section class="reviews">
+    <div class="container">
+        <h2 class="secondary-title reviews__title" data-theme="dark">Все отзывы покупателей</h2>
+		<ul class="reviews__list">
+			<li class="reviews__item">
+				<img class="reviews__item-img" src="./../../images/avatars/avatar-1.jpg" alt="Елена Козлова" width="120" height="120">
+				<div class="reviews-wrapper">
+					<h3 class="reviews__item-title">Елена Козлова</h3>
+					<p class="reviews__item-description">Очень быстрая доставка. Я всегда получаю кабель в оговоренные сроки, что очень важно, особенно если у меня есть срочные задачи, связанные с установкой кабельных систем.</p>
+			    </div>
+			</li>
+			<li class="reviews__item">
+				<img class="reviews__item-img" src="./../../images/avatars/avatar-4.jpg" alt="Ольга Смирнова" width="120" height="120">
+				<div class="reviews-wrapper">
+					<h3 class="reviews__item-title">Ольга Смирнова</h3>
+					<p class="reviews__item-description">Цены на cablerrr являются самыми конкурентоспособными на рынке. Беру тут кабеля уже какой раз и всё отлично!</p>
+				</div>
+			</li>
+			<li class="reviews__item">
+				<img class="reviews__item-img" src="./../../images/avatars/avatar-2.jpg" alt="Артем Волков" width="120" height="120">
+				<div class="reviews-wrapper">
+					<h3 class="reviews__item-title">Артем Волков</h3>
+					<p class="reviews__item-description">Качество кабелей, предлагаемых в этом магазине, всегда на высшем уровне. Все кабели изготовлены из прочных материалов и долговечны. Никогда не возникало проблем с кабелем.</p>
+				</div>
+			</li>
+			<li class="reviews__item">
+				<img class="reviews__item-img" src="./../../images/avatars/avatar-3.jpg" alt="Алексей Иванов" width="120" height="120">
+				<div class="reviews-wrapper">
+					<h3 class="reviews__item-title">Алексей Иванов</h3>
+					<p class="reviews__item-description">Я всегда могу найти информацию о качестве продукции. Удобно пользоваться.</p>
+				</div>
+			</li>
+			<li class="reviews__item">
+				<img class="reviews__item-img" src="./../../images/avatars/avatar-5.jpg" alt="Анастасия Никитина" width="120" height="120">
+				<div class="reviews-wrapper">
+					<h3 class="reviews__item-title">Анастасия Никитина</h3>
+					<p class="reviews__item-description">Спасибо сотрудникам которые всегда готовы помочь с выбором правильного типа кабеля и ответить на все вопросы.</p>
+			    </div>
+			</li>
+			<li class="reviews__item">
+				<img class="reviews__item-img" src="./../../images/avatars/avatar-6.jpg" alt="Дмитрий Петров" width="120" height="120">
+				<div class="reviews-wrapper">
+				    <h3 class="reviews__item-title">Дмитрий Петров</h3>
+				    <p class="reviews__item-description">Этот кабель достаточно прочный и стоит дешевле чем такой же на других сайтах, это радует!</p>
+				</div>
+			</li>
+		</ul>
+    </div>
+</section>
+
+
+
+			
 		</main>
 		<footer class="footer">
 	<div class="container">
@@ -188,16 +253,16 @@
 			<h3 class="third-title  footer__title" data-theme="dark">Компания</h3>
 			<ul class="social-list">
 				<li class="social-list__item">
-					<a class="social-list__link" href="#" data-theme="dark">О компании</a>
+					<a class="link" href="#" data-theme="dark">О компании</a>
 				</li>
 				<li class="social-list__item">
-					<a class="social-list__ink" href="#" data-theme="dark">Производители</a>
+					<a class="link" href="#" data-theme="dark">Производители</a>
 				</li>
 				<li class="social-list__item">
-					<a class="social-list__link" href="#" data-theme="dark">Сертификаты</a>
+					<a class="link" href="#" data-theme="dark">Сертификаты</a>
 				</li>
 				<li class="social-list__item">
-					<a class="social-list__link" href="#" data-theme="dark">Отзывы о нас</a>
+					<a class="link" href="#" data-theme="dark">Отзывы о нас</a>
 				</li>
 			</ul>
 		</div>
@@ -205,16 +270,16 @@
 			<h3 class="third-title footer__title" data-theme="dark">Покупателям</h3>
 			<ul class="social-list">
 				<li class="social-list__item">
-					<a class="social-list__link" href="#" data-theme="dark">Каталог товаров</a>
+					<a class="link" href="#" data-theme="dark">Каталог товаров</a>
 				</li>
 				<li class="social-list__item">
-					<a class="social-list__ink" href="#" data-theme="dark">Кабель и провод</a>
+					<a class="link" href="#" data-theme="dark">Кабель и провод</a>
 				</li>
 				<li class="social-list__item">
-					<a class="social-list__link" href="#" data-theme="dark">Способы оплаты</a>
+					<a class="link" href="#" data-theme="dark">Способы оплаты</a>
 				</li>
 				<li class="social-list__item">
-					<a class="social-list__link" href="#" data-theme="dark">Доставка курьером</a>
+					<a class="link" href="#" data-theme="dark">Доставка курьером</a>
 				</li>
 			</ul>
 		</div>
@@ -226,15 +291,16 @@
 					<a class="link social-list_link social-list_link-email" href="mailto:information@info.ru">information@info.ru</a>
 				</li>
 				<li class="social-list__item">
-					<span class="social-list__link">Пн-Пт с 9:00–18:00</span>
+					<span class="link">Пн-Пт с 9:00–18:00</span>
 				</li>
 				<li class="social-list__item">
-					<span class="social-list__link">Россия, г. Москва</span>
+					<span class="link">Россия, г. Москва</span>
 				</li>
 			</ul>
 		</div>
 	</div>
 </footer>
 
+		<script type="module" src="./../../js/script.min.js" data-path="./../../js/script.min.js"></script>
 	</body>
 </html>
