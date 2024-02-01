@@ -6,7 +6,9 @@ const active = 'active';
 export function slider() {
 
 
-	counterNum.textContent = thumbsAll.length - 6;
+	if (counterNum) {
+		counterNum.textContent = thumbsAll.length - 6;
+	}
 
 	function activeClass(thumbsActive, fullSizeActive) {
 		if (thumbsActive) {

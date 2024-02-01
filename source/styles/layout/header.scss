@@ -1,6 +1,5 @@
 .header {
 
-
 	overflow: hidden;
 
 	.container {
@@ -14,12 +13,14 @@
 
 	.decors-circle {
 		position: absolute;
-		top: -400px;
-		left: -255px;
+		top: -455px;
+		left: -284px;
+
 	}
 
 	.logo {
 		position: relative;
 		z-index: 1;
+		flex-grow: 1;
 	}
 }

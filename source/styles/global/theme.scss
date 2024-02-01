@@ -14,7 +14,6 @@ h6 {
 
 	&.theme-active {
 		color: $base-color-text;
-		font-family: $secondary-font;
 	}
 }
 
@@ -43,7 +42,7 @@ h6 {
 	.sun-theme,
 	.moon-theme {
 		position: absolute;
-		top: 25px;
+		top: 0;
 		left: 0;
 		transition: 0.3s ease-in-out;
 	}

@@ -14,6 +14,7 @@
 		padding: 0;
 		transition: 0.3s ease-in-out;
 		color: $base-color-background;
+		font-family: $primary-font;
 
 		.overlay {
 			&.active {
@@ -38,6 +39,7 @@
 	margin: 0 auto;
 	padding: 0 10px;
 	min-height: 200px;
+
 	@media screen and (min-width: $desktop) {
 		padding: 0 80px;
 	}

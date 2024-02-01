@@ -1,7 +1,7 @@
 $primary-font: 'gropled',
 'Arial',
 sans-serif;
-$secondary-font: 'Arial',
+$secondary-font: 'manrope',
 'Roboto',
 sans-serif;
 $text-font: 'manrope',
@@ -27,7 +27,10 @@ $base-theme-no-active: #fd9d00;
 $base-background-light: #e2de80;
 $base-background-light-pink: #ffb5d9;
 $base-theme-background: #123555;
-$base-backround-dark: #909AA833;
+$base-background-dark: #909AA833;
+
+$base-gray-opacity-20: #909aa820;
+$base-gray-opacity-10: #909aa818;
 
 $tablet: 768px;
 $desktop: 1680px;
