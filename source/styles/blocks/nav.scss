@@ -5,11 +5,14 @@
 	flex-grow: 1;
 	position: relative;
 	z-index: 1;
+	height: 85%;
 
 	&__list {
 		display: flex;
 		justify-content: flex-start;
 		list-style-type: none;
+		padding-left: 270px;
+		margin-top: 7px;
 	}
 
 	&__list-item {
