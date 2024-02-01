@@ -1,5 +1,12 @@
 .product-slider {
 
+	.container {
+		// display: flex;
+		// align-items: flex-start;
+		// justify-content: space-between;
+		// gap: 10px;
+	}
+
 	&__wrapper {
 		display: grid;
 		grid-template-columns: 100px minmax(25%, 640px) 1fr;

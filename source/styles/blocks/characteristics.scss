@@ -1,0 +1,23 @@
+@import './../global/variables.scss';
+
+.characteristics {
+	flex-grow: 1;
+	display: grid;
+	background-color: $base-background-light;
+	order: 2;
+	max-height: 640px;
+	border-radius: 40px;
+	padding: 30px;
+	text-align: left;
+	font-family: $secondary-font;
+
+	&__row {
+		td:nth-of-type(2) {
+			text-align: right;
+		}
+	}
+
+	.base-text {
+		color: $base-color-text;
+	}
+}
