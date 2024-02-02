@@ -37,21 +37,16 @@
 				</li>
 			</ul>
 			<ul class="auth">
-				<li class="button button--dark">
-					<a class="link auth__sign" href="#" id="signIn" data-theme="dark">Регистрация</a>
+				<li>
+					<a class="button button--dark  auth__sign" href="#" id="signIn" data-theme="dark">Регистрация</a>
 				</li>
-				<li class="button button--white">
-					<a class="link auth__login" href="#" data-theme="dark">Вход</a>
+				<li>
+					<a class="button button--white auth__login" href="#" data-theme="dark">Вход</a>
 				</li>
 			</ul>
-			<!-- <div class="auth">
-				<a class="button auth__sign" href="#" id="signIn" data-theme="dark">Регистрация</a>
-				<a class="button auth__login" href="#" data-theme="dark">Вход</a>
-			</div> -->
 			<button type="button" id="themeToggle" data-theme="dark">
 				<div class="button-icon-theme  sun-theme">
 					<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
 
 					<svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="50px" viewBox="0 0 108.336 108.336" xml:space="preserve" stroke="currentColor">
 
@@ -112,15 +107,11 @@
 
 		<div class="container">
 			<div class="intro__info">
-
 				<h2 class="secondary-title intro__title" data-theme="dark">Оптовая продажа кабеля и комплектующих</h2>
 				<p class="base-text intro__text" data-theme="dark">Вся продукция сертифицирована и отвечает высоким техническим требованиям и стандартам.</p>
 				<div class="intro__buttons">
-					<div class="button button--dark_intro">
-						<a class="link" href="#" data-theme="dark">Купить оптом</a>
-					</div>
-					<div class="button button--transparent_intro">
-						<a class="link" href="#" data-theme="dark">Подробнее</a>
+						<a class="button" href="#" data-theme="dark">Купить оптом</a>
+						<a class="button button--more" href="#" data-theme="dark">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -265,9 +256,10 @@
 	</a>
 	<div class="special-products__item-wrapper">
 		<p class="base-text special-products__item-price" data-theme="dark">6920<span>₽</span></p>
-		<button class="special-products__item-btn" type="button" data-theme="dark">В корзину</button>
+		<button class="special-products__item-btn button button--dark" type="button" data-theme="dark">В корзину</button>
 	</div>
-</li> 
+</li>
+
 			<li class="special-products__item">
 	<a href="./pages/products/product-2.html">
 		<img class="special-products__item-img" src="./images/products/product_1.png" alt="Изображение Акустический кабель REXA" width="433" height="433">
@@ -275,7 +267,7 @@
 	</a>
 	<div class="special-products__item-wrapper">
 		<p class="base-text special-products__item-price" data-theme="dark">1639<span>₽</span></p>
-		<button class="special-products__item-btn" type="button" data-theme="dark">В корзину</button>
+		<button class="special-products__item-btn button button--dark" type="button" data-theme="dark">В корзину</button>
 	</div>
 </li>
 
@@ -286,7 +278,7 @@
 	</a>
 	<div class="special-products__item-wrapper">
 		<p class="base-text special-products__item-price" data-theme="dark">4940<span>₽</span></p>
-		<button class="special-products__item-btn" type="button" data-theme="dark">В корзину</button>
+		<button class="special-products__item-btn button button--dark" type="button" data-theme="dark">В корзину</button>
 	</div>
 </li>
 
@@ -297,7 +289,7 @@
 	</a>
 	<div class="special-products__item-wrapper">
 		<p class="base-text special-products__item-price" data-theme="dark">7340<span>₽</span></p>
-		<button class="special-products__item-btn" type="button" data-theme="dark">В корзину</button>
+		<button class="special-products__item-btn button button--dark" type="button" data-theme="dark">В корзину</button>
 	</div>
 </li>
 
@@ -308,7 +300,7 @@
 	</a>
 	<div class="special-products__item-wrapper">
 		<p class="base-text special-products__item-price" data-theme="dark">5970<span>₽</span></p>
-		<button class="special-products__item-btn" type="button" data-theme="dark">В корзину</button>
+		<button class="special-products__item-btn button button--dark" type="button" data-theme="dark">В корзину</button>
 	</div>
 </li>
 
@@ -319,7 +311,7 @@
 	</a>
 	<div class="special-products__item-wrapper">
 		<p class="base-text special-products__item-price" data-theme="dark">8899<span>₽</span></p>
-		<button class="special-products__item-btn" type="button" data-theme="dark">В корзину</button>
+		<button class="special-products__item-btn button button--dark" type="button" data-theme="dark">В корзину</button>
 </div>
 </li>
 
@@ -384,17 +376,17 @@
 			</ul>
 		</div>
 		<div class="footer__contact">
-			<h3 class="visually-hidden">Контакты</h2>
-			<a class="link footer__phone-link" href="tel:+74990000000">+7 (499) 000-00-00</a>
+			<h3 class="visually-hidden" data-theme="dark">Контакты</h2>
+			<a class="link footer__phone-link" href="tel:+74990000000" data-theme="dark">+7 (499) 000-00-00</a>
 			<ul class="social-list">
 				<li class="social-list__item">
-					<a class="link social-list_link social-list_link-email" href="mailto:information@info.ru">information@info.ru</a>
+					<a class="link social-list_link social-list_link-email" href="mailto:information@info.ru" data-theme="dark">information@info.ru</a>
 				</li>
 				<li class="social-list__item">
-					<span class="link">Пн-Пт с 9:00–18:00</span>
+					<span class="link" data-theme="dark">Пн-Пт с 9:00–18:00</span>
 				</li>
 				<li class="social-list__item">
-					<span class="link">Россия, г. Москва</span>
+					<span class="link" data-theme="dark">Россия, г. Москва</span>
 				</li>
 			</ul>
 		</div>
