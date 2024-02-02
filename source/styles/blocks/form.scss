@@ -1,0 +1,114 @@
+@import './../global/variables.scss';
+
+.page__body .header {
+	overflow: visible;
+
+	.decors-circle {
+		left: -261px;
+		top: -233px;
+	}
+
+
+}
+
+
+
+.form {
+	min-height: 600px;
+	padding: 124px 0 224px 0;
+
+	.container {
+		min-height: inherit;
+		position: relative;
+
+		.decors-cirlce-2 {
+			position: absolute;
+			right: -280px;
+			bottom: -372px;
+			z-index: -1;
+		}
+	}
+
+	&__wrapper {
+		padding: 100px;
+		border-radius: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		grid-template-rows: 100px auto;
+		gap: 80px;
+		max-width: 1006px;
+		margin: 0 auto;
+		min-height: inherit;
+		backdrop-filter: blur(40px);
+		background-color: $base-gray-opacity-10;
+
+		.third-title {
+			text-align: center;
+			margin-bottom: 0;
+		}
+	}
+
+	&__form {
+		display: grid;
+		gap: 20px;
+		justify-items: center;
+		grid-template-columns: minmax(200px, 500px);
+	}
+
+	&__input {
+		min-height: 60px;
+		min-width: 100%;
+		padding: 8px 24px;
+		background-color: $base-border-button-gray;
+		border: 2px solid transparent;
+		font-family: $secondary-font;
+		font-size: 16px;
+		line-height: 24px;
+		color: $base-color-input;
+		border-radius: 100px;
+
+		&:hover,
+		&:focus,
+		&:focus-visible {
+			outline: none;
+			border: 2px solid $base-border-button-white;
+		}
+
+
+	}
+
+	label {
+		position: relative;
+		min-width: 100%;
+		display: flex;
+		justify-content: center;
+		color: white;
+
+		&:last-of-type {
+			margin-bottom: 100px;
+		}
+	}
+
+
+}
+
+.form__pass-btn {
+	display: block;
+	position: absolute;
+	mask-image: url('./../../images/vectors/eye.svg');
+	width: 24px;
+	height: 24px;
+	background-color: white;
+	border: none;
+	outline: none;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	cursor: pointer;
+}

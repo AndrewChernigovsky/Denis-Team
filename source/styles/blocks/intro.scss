@@ -11,7 +11,7 @@
 		justify-content: center;
 		gap: 10px;
 	}
-	
+
 	&__wrapper {
 		background: linear-gradient(120deg, $base-background-light, $base-background-light-pink);
 		border-radius: 80px;
@@ -56,7 +56,7 @@
 			position: absolute;
 			top: -800px;
 			right: 0;
-			z-index: -1;
+			z-index: 0;
 		}
 	}
 
@@ -71,7 +71,7 @@
 			position: absolute;
 			bottom: -828px;
 			left: -401px;
-			z-index: -1;
+			z-index: 0;
 		}
 	}
 
@@ -80,7 +80,11 @@
 			position: absolute;
 			top: -612px;
 			left: -257px;
-			z-index: -1;
+			z-index: 0;
+
+			@media screen and (min-width: 1800px) {
+				left: -110px;
+			}
 		}
 	}
 
@@ -89,7 +93,7 @@
 			position: absolute;
 			top: 209px;
 			right: -301px;
-			z-index: -1;
+			z-index: 0;
 		}
 	}
 
@@ -98,7 +102,7 @@
 			position: absolute;
 			top: 315px;
 			right: -273px;
-			z-index: -1;
+			z-index: 0;
 		}
 	}
 }

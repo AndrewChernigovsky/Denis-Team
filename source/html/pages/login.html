@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="./../css/styles.css">
+    </head>
+    <body class="page__body">
+        @@include('./../layout/header-pages.html')
+        <main>
+            <section class="form">
+                <div class="container">
+                    <div class="form__wrapper">
+                        <h3 class="third-title">Регистрация</h3>
+                        <form class="form__form" action="" method="post">
+                            <input
+                                type="text"
+                                name="login"
+                                placeholder="Логин"
+                                class="form__input"
+                                required
+                            >
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                class="form__input"
+                                required
+                            >
+                            <label>
+                                <input
+                                    type="password"
+                                    name="password"
+                                    placeholder="Пароль"
+                                    class="form__input"
+                                    required
+                                >
+                                <button type="button" aria-label="Показать Пароль" class="form__pass-btn"></button>
+                            </label>
+                            <label>
+                                <input
+                                    type="password"
+                                    name="accept-password"
+                                    placeholder="Повторный пароль"
+                                    class="form__input"
+                                    required
+                                >
+                                <button type="button" aria-label="Показать Пароль" class="form__pass-btn"></button>
+                            </label>
+                            <button type="submit" class="button button--white">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                    <img src="./../images/vectors/auth-1.svg" alt="" class="decors-cirlce-2">
+                </div>
+            </section>
+        </main>
+        <script src="./../js/script.min.js"></script>
+    </body>
+</html>
