@@ -1,0 +1,133 @@
+@import './../global/variables.scss';
+
+.button {
+	display: flex;
+	min-width: 177px;
+	min-height: 58px;
+	padding: 14px 30px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 100px;
+	border: 2px solid $base-border-button-gray;
+	font-family: $secondary-font;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px;
+	text-align: center;
+	text-decoration: none;
+	color: $base-color-text;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+
+	&:hover {
+		color: $base-color-text-inverse;
+		border: 2px solid $base-border-button-white;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+
+	&:focus,
+	&:focus-visible {
+		outline: none;
+		border: 2px solid $base-border-button-pink;
+	}
+
+	&--white {
+		background-color: $base-background-button-white;
+		min-width: 180px;
+		transition: 0.3s ease-in-out;
+		color: $base-color-text;
+
+		&:hover {
+			border: 2px solid $base-background-button-white;
+			color: $base-color-text-inverse;
+			background-color: $base-background-button-dark;
+		}
+	}
+
+	&--dark {
+		background-color: $base-background-button-dark;
+		min-width: 180px;
+		transition: 0.3s ease-in-out;
+		color: $base-color-text-inverse;
+		border: 2px solid $base-border-button-white;
+
+		&:hover {
+			border: 2px solid $base-border-button-white;
+			color: $base-color-text;
+			background-color: $base-background-button-white;
+		}
+	}
+
+	&--more {
+		transition: 0.3s ease-in-out;
+		min-width: 200px;
+
+		color: $base-background-button-dark;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 10px;
+			width: 25px;
+			height: 21px;
+			mask-image: url('./../../images/vectors/arrow.svg');
+			background-repeat: no-repeat;
+			background-color: $base-background-button-dark;
+			background-size: 24px 24px;
+			transition: 0.3 ease-in-out;
+			animation: more 1.4s infinite ease-in-out;
+		}
+
+		&:hover {
+			border: 2px solid $base-border-button-white;
+			background-position: 95% 50%;
+			color: $base-color-text-inverse;
+
+			&::after {
+				mask-image: url('./../../images/vectors/arrow.svg');
+				background-color: $base-background-button-white;
+				transition: 0.3 ease-in-out;
+			}
+		}
+	}
+}
+
+.link {
+	border: 2px solid transparent;
+
+	&:hover {
+		color: $base-color-text-inverse;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+
+	&:focus,
+	&:focus-visible {
+		outline: none;
+		border: 2px solid $base-border-button-pink;
+	}
+}
+
+@keyframes more {
+	0% {
+		right: 10px;
+	}
+
+	50% {
+		right: 15px;
+	}
+
+	100% {
+		right: 10px;
+	}
+}

@@ -9,12 +9,12 @@
 .page {
 	&__body {
 		background-color: $base-color-background;
-		font-family: $primary-font;
 		font-size: 14px;
 		margin: 0;
 		padding: 0;
 		transition: 0.3s ease-in-out;
 		color: $base-color-background;
+		font-family: $primary-font;
 
 		.overlay {
 			&.active {
@@ -51,6 +51,7 @@ img {
 }
 
 .link {
+	font-family: "manrope";
 	text-decoration: none;
 	transition: 0.3s ease-in-out;
 

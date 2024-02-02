@@ -1,0 +1,103 @@
+@import './../global/variables.scss';
+
+.footer {
+	min-height: 553px;
+	border-radius: 80px 80px 0px 0px;
+	background: $base-gray-opacity-10;
+	overflow: hidden;
+
+	.container {
+		display: flex;
+		align-items: flex-start;
+		gap: 20px;
+		flex-wrap: nowrap;
+		justify-content: center;
+		padding-top: 100px;
+		position: relative;
+		background-attachment: fixed;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: -581px;
+			bottom: -451px;
+			background-image: url('./../../images/vectors/decors-footer-1.svg');
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 930px;
+			height: 766px;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 930px;
+			height: 766px;
+			right: -174px;
+			top: -495px;
+			background-image: url('./../../images/vectors/decors-footer-2.svg');
+			background-size: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+
+}
+
+.footer__contact {
+	display: flex;
+	width: 493px;
+	height: 352px;
+	padding: 50px;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-shrink: 0;
+	border-radius: 40px;
+	background: transparent;
+	position: relative;
+	backdrop-filter: blur(40px);
+	background-color: $base-gray-opacity-20;
+	z-index: 1;
+}
+
+.footer__title,
+.footer__phone-link {
+	padding-top: 10px;
+	color: $base-color-text-inverse;
+	font-family: "gropled";
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 70px;
+}
+
+.footer__title.third-title {
+	margin-bottom: 0px;
+}
+
+.footer__phone-link {
+	letter-spacing: -2px;
+	text-wrap: nowrap;
+}
+
+.social-list {
+	padding-inline-start: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	list-style-type: none;
+	margin: 0px;
+	margin-top: -8px;
+}
+
+.social-list__item {
+	color: $base-color-text-inverse;
+	font-family: Manrope;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 50px;
+	letter-spacing: -0.78px;
+}

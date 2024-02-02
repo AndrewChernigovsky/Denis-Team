@@ -1,0 +1,116 @@
+@import './../global/variables.scss';
+
+.characteristics {
+	flex-grow: 1;
+	display: grid;
+	background-color: $base-background-light;
+	order: 2;
+	max-height: 650px;
+	border-radius: 40px;
+	padding: 30px;
+	text-align: left;
+	font-family: $secondary-font;
+
+	&__row {
+		td:nth-of-type(2) {
+			text-align: right;
+		}
+	}
+
+	.base-text {
+		color: $base-color-text-assistant;
+		font-family: $secondary-font;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 32px;
+	}
+
+	&__counter {
+		background-color: $base-color-background;
+		padding: 9px 30px;
+		border-radius: 100px;
+
+		input {
+			background-color: transparent;
+			border: none;
+			outline: none;
+			font-size: 18px;
+			line-height: 32px;
+			color: $base-color-text-inverse;
+			text-align: center;
+		}
+
+		button {
+			border: none;
+			outline: none;
+			background-color: transparent;
+			color: $base-color-text-inverse;
+			font-size: 24px;
+			line-height: 32px;
+			cursor: pointer;
+			width: 25px;
+		}
+	}
+
+	&__buttons-wrapper {
+		display: flex;
+		gap: 30px;
+	}
+
+	&__cart {
+		flex-grow: 1;
+		border-radius: 100px;
+		border: none;
+		outline: none;
+		background-color: $base-color-background;
+		color: $base-color-text-inverse;
+		font-size: 24px;
+		line-height: 32px;
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+
+		&:hover {
+			color: $base-color-text;
+			background-color: $base-color-background-inverse;
+		}
+	}
+
+	tbody {
+		position: relative;
+
+		&:not(:first-of-type, :nth-of-type(3)) {
+			&::after {
+				content: '';
+				bottom: 0;
+				width: 100%;
+				height: 1px;
+				position: absolute;
+				background-color: $base-color-text-assistant;
+			}
+		}
+	}
+
+	&__result {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 32px;
+		line-height: 70px;
+		margin: 10px 0;
+
+
+		span {
+			color: $base-color-text;
+			font-weight: 600;
+
+			&:last-of-type {
+				font-size: 56px;
+			}
+		}
+	}
+
+	.third-title {
+		font-size: 32px;
+		line-height: 70px;
+	}
+}

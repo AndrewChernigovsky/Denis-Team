@@ -9,3 +9,27 @@
 		url("./../../fonts/gropled/gropled-bold.otf") format("opentype");
 	font-display: swap;
 }
+
+@font-face {
+	font-family: "manrope";
+	font-weight: 400;
+	font-style: normal;
+	src: 
+		url("./../../fonts/manrope/manrope.woff2") format("woff2"),
+		url("./../../fonts/manrope/manrope.woff") format("woff"),
+		url("./../../fonts/manrope/manrope.ttf") format("truetype"),
+		url("./../../fonts/manrope/manrope.otf") format("opentype");
+	font-display: swap;	
+}
+
+@font-face {
+	font-family: "manrope";
+	font-weight: 700;
+	font-style: bold;
+	src: 
+		url("./../../fonts/manrope/manrope-bold.woff2") format("woff2"),
+		url("./../../fonts/manrope/manrope-bold.woff") format("woff"),
+		url("./../../fonts/manrope/manrope-bold.ttf") format("truetype"),
+		url("./../../fonts/manrope/manrope-bold.otf") format("opentype");
+	font-display: swap;	
+}
