@@ -13,7 +13,7 @@
 
 	&__item {
 		background-color: $base-background-light;
-		min-height: 100px;
+		min-height: 140px;
 		border-radius: 40px;
 		padding: 30px;
 		margin-bottom: 20px;
@@ -38,14 +38,13 @@
 		border-radius: 20px;
 	}
 
-	&__item-title {
-		color: $base-color-text;
-		font-size: 32px;
-		font-weight: 700;
-		line-height: 70px;
-		margin-bottom: 40px;
-		font-family: $secondary-font;
-	}
+  &__item-title {
+    color: $base-color-text;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 40px;
+  }
 
 	&__item-wrapper {
 		display: flex;
