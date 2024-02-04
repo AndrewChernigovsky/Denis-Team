@@ -2,9 +2,6 @@ import {
 	theme
 } from "./tasks/theme.js";
 import {
-	modal
-} from "./tasks/modal.js";
-import {
 	slider
 }
 from "./tasks/product-slider.js";
@@ -18,7 +15,6 @@ import {
 
 document.addEventListener('DOMContentLoaded', () => {
 	theme();
-	modal();
 	slider();
 	counterItems();
 	password();

@@ -1,0 +1,47 @@
+@import './../global/variables.scss';
+
+.cart-page {
+	.header .decors-circle {
+		display: none;
+	}
+}
+
+.cart {
+	display: flex;
+	gap: 20px;
+
+	&__items {
+		flex-grow: 1;
+		margin: 0;
+		list-style-type: none;
+		padding: 0;
+		display: grid;
+		gap: 20px;
+
+
+		.characteristics {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+		}
+
+		.characteristics__wrapper {
+			flex-grow: 1;
+		}
+	}
+
+	&__res {
+		background-color: $base-border-button-pink;
+		min-height: 100px;
+		max-height: 400px;
+		flex-grow: 0;
+		gap: 30px;
+
+		.characteristics__cart {
+			// max-width: 423px;
+			// margin: 0 auto;
+			height: 60px;
+			align-self: end;
+		}
+	}
+}

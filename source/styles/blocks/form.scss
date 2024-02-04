@@ -1,6 +1,6 @@
 @import './../global/variables.scss';
 
-.page__body .header {
+.form-page .header {
 	overflow: visible;
 
 	.decors-circle {
@@ -11,7 +11,9 @@
 
 }
 
-
+main {
+	overflow: hidden;
+}
 
 .form {
 	min-height: 600px;

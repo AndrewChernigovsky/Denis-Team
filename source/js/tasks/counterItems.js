@@ -5,18 +5,16 @@ const inputItems = document.querySelector('.characteristics__counter > input');
 export function counterItems() {
 
 	if (buttonMinus && buttonMinus && inputItems) {
-		let value = 1;
+		inputItems.value = 1;
 
 		function click(operator) {
 			if (operator === 'plus') {
-				value += 1;
-				inputItems.value = String(value);
-				console.log(inputItems.value);
+				inputItems.value = +inputItems.value + 1;
 			}
 			if (operator === 'minus') {
 				inputItems.value -= 1;
-				if (inputItems.value < 0) {
-					inputItems.value = 0;
+				if (+inputItems.value <= 1) {
+					inputItems.value = 1;
 				}
 			}
 		}

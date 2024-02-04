@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Корзина Товаров</title>
-		<link rel="stylesheet" href="./../css/styles.css">
-	</head>
-	<body class="page__body">
-
-	</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Корзина Товаров</title>
+        <link rel="stylesheet" href="./../css/styles.css">
+    </head>
+    <body class="page__body cart-page">
+        @@include('./../layout/header-pages.html')
+        <main>
+            <div class="container">
+                <section class="cart">
+                    <ol class="cart__items">
+                        <li>
+                            @@include('./../blocks/cart/product-add.html')
+                        </li>
+                        <li>
+                            @@include('./../blocks/cart/product-add-2.html')
+                        </li>
+                    </ol>
+                    @@include('./../blocks/cart/result.html')
+                </section>
+            </div>
+        </main>
+        @@include('./../layout/footer.html')
+        <script src="./../js/script.min.js"></script>
+    </body>
 </html>
