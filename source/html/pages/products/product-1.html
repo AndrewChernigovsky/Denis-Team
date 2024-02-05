@@ -9,13 +9,32 @@
 	<body class="page__body">
 		@@include('./../../layout/header.html')
 		<main>
-			<div class="">
-				<button class="wishlist" type="button">В избранное</button>
-				<button type="button">
-					<span class="button-inside">32</span>Oтзыва
-				</button>
+			<!-- Кнопки-закладки -->
+			<div class="container container-bookmark">
+				<ul class="bookmark-buttons__list">
+					<li class="bookmark-buttons__item">
+						<button class="bookmark-buttons__btn bookmark-buttons__wishlist" type="button">
+							<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<defs>
+									<clipPath id="clip2884_3729">
+										<rect id="icons" width="24.000000" height="24.000000" fill="#fe7153" fill-opacity="0"/>
+									</clipPath>
+								</defs>
+								<rect id="icons" width="24.000000" height="24.000000" fill="#fe7153" fill-opacity="0"/>
+								<g clip-path="url(#clip2884_3729)">
+									<path id="Vector" d="M19.0557 3.41693C18.3882 3.14038 17.6729 2.99805 16.9502 2.99805C16.2275 2.99805 15.5122 3.14038 14.8447 3.41693C14.1772 3.69354 13.5708 4.09888 13.0601 4.60986L12 5.66986L10.9399 4.60986C9.9082 3.57819 8.50928 2.9986 7.05029 2.9986C5.59131 2.9986 4.19189 3.57819 3.16016 4.60986C2.12842 5.64154 1.54883 7.04083 1.54883 8.49988C1.54883 9.95892 2.12842 11.3582 3.16016 12.3899L4.22021 13.4499L12 21.2299L19.7803 13.4499L20.8403 12.3899C21.3511 11.8791 21.7563 11.2727 22.0332 10.6052C22.3096 9.93774 22.4521 9.22235 22.4521 8.49988C22.4521 7.7774 22.3096 7.06195 22.0332 6.39453C21.7563 5.72705 21.3511 5.12061 20.8403 4.60986C20.3296 4.09888 19.7231 3.69354 19.0557 3.41693Z" stroke="#fff" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+								</g>
+							</svg>
+							В избранное</button>
+						<button class="bookmark-buttons__btn bookmark-buttons__review" type="button">
+							<span>32</span>Oтзыва
+						</button>
+					</li>
+					<li>
+						<button class="bookmark-buttons__btn bookmark-buttons__share" type="button">Поделиться</button>
+					</li>
+				</ul>
 			</div>
-			<button type="button">Поделиться</button>
 			@@include('./../../blocks/products-slider/product-1.html')
 			@@include('./../../sections/reviews.html')
 			<!-- @@include('./../../sections/catalog.html') -->
