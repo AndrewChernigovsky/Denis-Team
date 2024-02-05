@@ -56,6 +56,11 @@
 		color: $base-color-text-inverse;
 		border: 2px solid $base-border-button-white;
 
+		&.theme-active {
+			color: $base-color-text-inverse;
+			background-color: $base-background-button-dark;
+		}
+
 		&:hover {
 			border: 2px solid $base-border-button-white;
 			color: $base-color-text;

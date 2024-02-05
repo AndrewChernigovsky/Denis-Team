@@ -7,10 +7,12 @@ const elementsWithDataTheme = document.querySelectorAll('[data-theme]');
 // Перебираем найденные элементы
 
 export function theme() {
-	TOGGLE_THEME.addEventListener('click', () => {
-		BODY.classList.toggle(ACTIVE);
-		elementsWithDataTheme.forEach(function (element) {
-			element.classList.toggle(ACTIVE);
-		});
-	})
+	if (TOGGLE_THEME) {
+		TOGGLE_THEME.addEventListener('click', () => {
+			BODY.classList.toggle(ACTIVE);
+			elementsWithDataTheme.forEach(function (element) {
+				element.classList.toggle(ACTIVE);
+			});
+		})
+	}
 }
