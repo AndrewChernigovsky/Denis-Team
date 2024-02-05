@@ -1,0 +1,73 @@
+@import './../global/variables.scss';
+
+.profile {
+	flex-direction: row-reverse;
+	padding-bottom: 40px;
+	border-bottom: 1px solid $base-border-button-white;
+	margin-bottom: 40px;
+
+	&:last-of-type {
+		padding-bottom: 180px;
+
+		.cart__res {
+			gap: 10px;
+			background-color: $base-gray-opacity-20;
+
+			p,
+			span,
+			td {
+				color: $base-color-text-inverse;
+			}
+
+			button {
+				background-color: $base-background-button-white;
+				color: $base-color-text;
+				font-weight: 500;
+			}
+
+		}
+
+		.characteristics {
+			background-color: $base-gray-opacity-20;
+
+			p,
+			span {
+				color: $base-color-text-inverse;
+			}
+
+			button {
+				color: $base-color-text;
+				font-weight: 600;
+
+				&:hover {
+					color: $base-color-text-inverse;
+					background-color: $base-color-background;
+				}
+
+				.mark {
+					background-color: $base-color-background-inverse;
+				}
+
+				&.like-button {
+					color: $base-color-text-inverse;
+				}
+			}
+		}
+	}
+
+	.cart__res {
+		gap: 10px;
+		background-color: $base-background-light;
+	}
+
+	.characteristics__buttons-wrapper {
+		margin-top: 10px;
+	}
+
+	.count {
+		font-size: 32px;
+		color: $base-color-text;
+		font-weight: 600;
+		margin: 0;
+	}
+}
