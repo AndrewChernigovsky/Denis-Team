@@ -40,6 +40,7 @@
     border-radius: 100px;
     padding: 14px 30px 14px 70px;
     min-height: 60px;
+    cursor: pointer;
   }
 
   &__btn:hover {
@@ -51,41 +52,62 @@
     color: $base-border-button-dark;
   }
 
+  /*Кнопка В избранное*/
   &__wishlist {
     min-width: 212px;
     position: relative;
 
     svg {
       position: absolute;
+      width: 24px;
+      height: 24px;
       top: 19px;
       left: 30px;
-      
     }
   }
 
   &__wishlist:hover svg path{
-    stroke: #000;
+    stroke: $base-border-button-dark;
   }
 
-  /* &__wishlist::before {
-    content: '';
-    position: absolute;
-    background-image: url('./../../images/icons/icons-heart.svg');
-    width: 24px;
-    height: 24px;
-    top: 18px;
-    left: 30px;
-  } */
-
+  /*Кнопка Отзывы*/
   &__review {
     min-width: 189px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 18px;
+      left: 27px;
+    }
+
+    span {
+      margin-right: 5px;
+    }
   }
 
-  &__review span {
-    margin-right: 5px;
+  &__review:hover svg path {
+    stroke: $base-border-button-dark;
   }
 
+  /*Кнопка Поделиться*/
   &__share {
     min-width: 209px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 17px;
+      left: 27px;
+      opacity: 30%;
+    }
+  }
+
+  &__share:hover svg path {
+    stroke: $base-border-button-dark;
   }
 }
