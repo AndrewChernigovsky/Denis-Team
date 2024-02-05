@@ -16,6 +16,16 @@
 		justify-content: space-between;
 		margin-bottom: 40px;
 	}
+
+	&__item {
+		display: flex;
+		border: 1px solid red;
+	}
+
+	&__all {
+		min-width: 212px;
+		margin-right: 16px;
+	}
 }
 
 .cart {
