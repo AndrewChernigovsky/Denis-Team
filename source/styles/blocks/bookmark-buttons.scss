@@ -47,7 +47,7 @@
     color: $base-border-button-dark;
   }
 
-  &__btn span:hover {
+  &__btn:hover span {
     color: $base-border-button-dark;
   }
 
@@ -55,7 +55,7 @@
     min-width: 212px;
     position: relative;
 
-    & svg {
+    svg {
       position: absolute;
       top: 19px;
       left: 30px;
@@ -63,7 +63,7 @@
     }
   }
 
-  &__wishlist svg path:hover {
+  &__wishlist:hover svg path{
     stroke: #000;
   }
 
