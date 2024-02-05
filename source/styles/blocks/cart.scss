@@ -6,6 +6,23 @@
 	}
 }
 
+/*блок Заголовок*/
+.title-head {
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		h2 {
+			margin-bottom: 0;
+		}
+	}
+
+	&__text {
+		font-size: 44px;
+		font-weight: 700;
+	}
+}
+
 /*Кнопкa Bыбрать все*/
 .buttons-control {
 	&__list {
