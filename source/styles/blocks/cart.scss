@@ -6,6 +6,18 @@
 	}
 }
 
+/*Кнопкa Bыбрать все*/
+.buttons-control {
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
+}
+
 .cart {
 	display: flex;
 	gap: 20px;
