@@ -42,18 +42,62 @@
 		min-width: 212px;
 		margin-right: 16px;
 		font-family: $secondary-font;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 32px;
-    color: $base-color-text-inverse;
-    background-color: $base-border-button-gray;
-    border: none;
-    border-radius: 100px;
-    padding: 14px 30px 14px 70px;
-    min-height: 60px;
-    cursor: pointer;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 32px;
+		color: $base-color-text-inverse;
+		background-color: $base-border-button-gray;
+		border: none;
+		border-radius: 100px;
+		padding: 14px 30px 14px 70px;
+		min-height: 60px;
+		cursor: pointer;
 	}
 
+	&__all:hover {
+		background-color: $base-color-border;
+	}
+}
+
+.filter-option label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	user-select: none;
+}
+
+.filter-input-checkbox+label::before {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 17px;
+	left: 27px;
+	border: 2px solid $base-color-border;
+	border-radius: 2px;
+}
+
+.filter-input-checkbox:checked+label::after {
+	content: 'v';
+	position: absolute;
+	width: 10px;
+	height: 8px;
+	top: 12px;
+	left: 34px;
+	/* background-image: url('./../../images/icons/check-mark.svg');
+	background-repeat: no-repeat; */
+}
+
+.filter-input-checkbox:hover+label::before {
+	border: 2px solid $base-border-button-dark;
+}
+
+.filter-input-checkbox:hover+label {
+	color: $base-border-button-dark;
+}
+
+/*Кнопка Удалить выбранные*/
+.buttons-control {
 	&__delete {
 		min-width: 280px;
 		position: relative;
@@ -65,17 +109,17 @@
 		width: 24px;
 		height: 24px;
 		top: 16px;
-		left: 30px;          
+		left: 30px;
 	}
 
 	&__delete:hover {
-    background-color: $base-border-button-white;
-    color: $base-border-button-dark;
-  }
+		background-color: $base-border-button-white;
+		color: $base-border-button-dark;
+	}
 
-	&__delete:hover svg path{
-    stroke: $base-border-button-dark;
-  }
+	&__delete:hover svg path {
+		stroke: $base-border-button-dark;
+	}
 
 	/*Кнопка Поделиться*/
 	&__share {
@@ -93,15 +137,18 @@
 	}
 
 	&__share:hover {
-    background-color: $base-border-button-white;
-    color: $base-border-button-dark;
-  }
+		background-color: $base-border-button-white;
+		color: $base-border-button-dark;
+	}
 
-	&__share:hover svg path{
-    stroke: $base-border-button-dark;
-  }
+	&__share:hover svg path {
+		stroke: $base-border-button-dark;
+	}
 }
 
+
+
+/**/
 .cart {
 	display: flex;
 	gap: 20px;

@@ -11,6 +11,7 @@
         <main>
             <div class="container">
                 <!-- Хлебные крошки -->
+                <!-- Заголовок -->
                 <div class="title-head__wrapper">
                     <h2 class="secondary-title" data-theme="dark">Корзина</h2>
                     <p class="title-head__text"><span>2</span>товара</p>
@@ -18,15 +19,10 @@
                 <!-- Кнопки Bыбрать все, Удалить выбранное, Поделиться -->
                 <ul class="buttons-control__list">
                     <li class="buttons-control__item">
-                        <label class="buttons-control__all">
-                            <input
-                                type="checkbox"
-                                name="name"
-                                id=""
-                                class=""
-                            >
-                            <span class="">Выбрать все</span>
-                        </label>
+                        <div class="filter-option">
+                            <input type="checkbox" name="name" id="check-all" class="visually-hidden filter-input-checkbox" checked>
+                            <label class="buttons-control__all" for="check-all">Выбрать все</label>
+                        </div>
                         <button class="buttons-control__all buttons-control__delete" type="button">
                             <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <path id="Vector 307" d="M4 6L20 6" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linecap="round"/>
@@ -56,6 +52,7 @@
                         </button>
                     </li>
                 </ul>
+                <!-- Карточка товара в корзине -->
                 <section class="cart">
                     <ol class="cart__items">
                         <li>
