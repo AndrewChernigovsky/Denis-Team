@@ -36,13 +36,70 @@
 
 	&__item {
 		display: flex;
-		border: 1px solid red;
 	}
 
 	&__all {
 		min-width: 212px;
 		margin-right: 16px;
+		font-family: $secondary-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $base-color-text-inverse;
+    background-color: $base-border-button-gray;
+    border: none;
+    border-radius: 100px;
+    padding: 14px 30px 14px 70px;
+    min-height: 60px;
+    cursor: pointer;
 	}
+
+	&__delete {
+		min-width: 280px;
+		position: relative;
+	}
+
+	&__delete svg {
+		content: "";
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		top: 16px;
+		left: 30px;          
+	}
+
+	&__delete:hover {
+    background-color: $base-border-button-white;
+    color: $base-border-button-dark;
+  }
+
+	&__delete:hover svg path{
+    stroke: $base-border-button-dark;
+  }
+
+	/*Кнопка Поделиться*/
+	&__share {
+		min-width: 209px;
+		position: relative;
+	}
+
+	&__share svg {
+		content: '';
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		top: 16px;
+		left: 32px;
+	}
+
+	&__share:hover {
+    background-color: $base-border-button-white;
+    color: $base-border-button-dark;
+  }
+
+	&__share:hover svg path{
+    stroke: $base-border-button-dark;
+  }
 }
 
 .cart {
