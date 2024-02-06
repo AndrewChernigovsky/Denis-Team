@@ -11,16 +11,33 @@
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 80px;
 
 		h2 {
+			font-family: $primary-font;
 			margin-bottom: 0;
 		}
 	}
 
 	&__text {
+		font-family: $secondary-font;
 		font-size: 44px;
 		font-weight: 700;
+		margin: 0;
+
+		span {
+			
+			margin-right: 12px;
+		}
 	}
+}
+
+.cart__title {
+	font-family: $secondary-font;
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 84px;
 }
 
 /*Кнопкa Bыбрать все*/
