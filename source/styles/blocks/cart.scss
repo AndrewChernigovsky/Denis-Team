@@ -27,7 +27,6 @@
 		margin: 0;
 
 		span {
-			
 			margin-right: 12px;
 		}
 	}
@@ -75,7 +74,7 @@
 		background-color: $base-color-border;
 	}
 }
-
+ /*Чекбокс*/
 .filter-option label {
 	position: relative;
 	display: block;
@@ -97,13 +96,12 @@
 .filter-input-checkbox:checked+label::after {
 	content: '';
 	position: absolute;
-	width: 10px;
-	height: 8px;
-	top: 24px;
+	width: 13px;
+	height: 11px;
+	top: 25px;
 	left: 34px;
-	/* background-color: red; */
 	mask-image: url('./../../images/icons/check-mark.svg');
-	background-color: #fff;
+	background-color: $base-color-border;
 	mask-repeat: no-repeat;
 }
 
@@ -113,6 +111,18 @@
 
 .filter-input-checkbox:hover+label {
 	color: $base-border-button-dark;
+}
+
+.filter-input-checkbox:checked:hover+label::after {
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 11px;
+	top: 25px;
+	left: 34px;
+	mask-image: url('./../../images/icons/check-mark.svg');
+	background-color: #000;
+	mask-repeat: no-repeat;
 }
 
 /*Кнопка Удалить выбранные*/
@@ -140,6 +150,14 @@
 		stroke: $base-border-button-dark;
 	}
 
+	.test-img {
+		width: 200px;
+		height: 50px;
+		background-color: rgb(49, 52, 227);
+		color: red;
+		border: 2px solid red;
+	}
+
 	/*Кнопка Поделиться*/
 	&__share {
 		min-width: 209px;
@@ -165,9 +183,6 @@
 	}
 }
 
-
-
-/**/
 .cart {
 	display: flex;
 	gap: 20px;
