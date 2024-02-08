@@ -6,6 +6,183 @@
 	}
 }
 
+/*блок Заголовок*/
+.title-head {
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 80px;
+
+		h2 {
+			font-family: $primary-font;
+			margin-bottom: 0;
+		}
+	}
+
+	&__text {
+		font-family: $secondary-font;
+		font-size: 44px;
+		font-weight: 700;
+		margin: 0;
+
+		span {
+			margin-right: 12px;
+		}
+	}
+}
+
+.cart__title {
+	font-family: $secondary-font;
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 84px;
+}
+
+/*Кнопкa Bыбрать все*/
+.buttons-control {
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
+
+	&__item {
+		display: flex;
+	}
+
+	&__all {
+		min-width: 212px;
+		margin-right: 16px;
+		font-family: $secondary-font;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 32px;
+		color: $base-color-text-inverse;
+		background-color: $base-border-button-gray;
+		border: none;
+		border-radius: 100px;
+		padding: 14px 30px 14px 70px;
+		min-height: 60px;
+		cursor: pointer;
+	}
+
+	&__all:hover {
+		background-color: $base-color-border;
+	}
+}
+ /*Чекбокс*/
+.filter-option label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	user-select: none;
+}
+
+.filter-input-checkbox+label::before {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 17px;
+	left: 27px;
+	border: 2px solid $base-color-border;
+	border-radius: 2px;
+}
+
+.filter-input-checkbox:checked+label::after {
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 11px;
+	top: 25px;
+	left: 34px;
+	mask-image: url('./../../images/icons/check-mark.svg');
+	background-color: $base-color-border;
+	mask-repeat: no-repeat;
+}
+
+.filter-input-checkbox:hover+label::before {
+	border: 2px solid $base-border-button-dark;
+}
+
+.filter-input-checkbox:hover+label {
+	color: $base-border-button-dark;
+}
+
+.filter-input-checkbox:checked:hover+label::after {
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 11px;
+	top: 25px;
+	left: 34px;
+	mask-image: url('./../../images/icons/check-mark.svg');
+	background-color: #000;
+	mask-repeat: no-repeat;
+}
+
+/*Кнопка Удалить выбранные*/
+.buttons-control {
+	&__delete {
+		min-width: 280px;
+		position: relative;
+	}
+
+	&__delete svg {
+		content: "";
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		top: 16px;
+		left: 30px;
+	}
+
+	&__delete:hover {
+		background-color: $base-border-button-white;
+		color: $base-border-button-dark;
+	}
+
+	&__delete:hover svg path {
+		stroke: $base-border-button-dark;
+	}
+
+	.test-img {
+		width: 200px;
+		height: 50px;
+		background-color: rgb(49, 52, 227);
+		color: red;
+		border: 2px solid red;
+	}
+
+	/*Кнопка Поделиться*/
+	&__share {
+		min-width: 209px;
+		position: relative;
+	}
+
+	&__share svg {
+		content: '';
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		top: 16px;
+		left: 32px;
+	}
+
+	&__share:hover {
+		background-color: $base-border-button-white;
+		color: $base-border-button-dark;
+	}
+
+	&__share:hover svg path {
+		stroke: $base-border-button-dark;
+	}
+}
+
 .cart {
 	display: flex;
 	gap: 20px;

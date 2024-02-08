@@ -1,0 +1,358 @@
+@charset "UTF-8";
+.cart-page .header .decors-circle {
+  display: none;
+}
+
+/*блок Заголовок*/
+.title-head__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+.title-head__wrapper h2 {
+  font-family: "gropled", "Arial", sans-serif;
+  margin-bottom: 0;
+}
+.title-head__text {
+  font-family: "manrope", "Roboto", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0;
+}
+.title-head__text span {
+  margin-right: 12px;
+}
+
+.cart__title {
+  font-family: "manrope", "Roboto", sans-serif;
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 84px;
+}
+
+/*Кнопкa Bыбрать все*/
+.buttons-control__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+.buttons-control__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.buttons-control__all {
+  min-width: 212px;
+  margin-right: 16px;
+  font-family: "manrope", "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #ffffff;
+  background-color: rgba(144, 154, 168, 0.2);
+  border: none;
+  border-radius: 100px;
+  padding: 14px 30px 14px 70px;
+  min-height: 60px;
+  cursor: pointer;
+}
+.buttons-control__all:hover {
+  background-color: #ffffff;
+}
+
+/*Чекбокс*/
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 17px;
+  left: 27px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 11px;
+  top: 25px;
+  left: 34px;
+  -webkit-mask-image: url("./../../images/icons/check-mark.svg");
+          mask-image: url("./../../images/icons/check-mark.svg");
+  background-color: #ffffff;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.filter-input-checkbox:hover + label::before {
+  border: 2px solid #000000;
+}
+
+.filter-input-checkbox:hover + label {
+  color: #000000;
+}
+
+.filter-input-checkbox:checked:hover + label::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 11px;
+  top: 25px;
+  left: 34px;
+  -webkit-mask-image: url("./../../images/icons/check-mark.svg");
+          mask-image: url("./../../images/icons/check-mark.svg");
+  background-color: #000;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+/*Кнопка Удалить выбранные*/
+.buttons-control {
+  /*Кнопка Поделиться*/
+}
+.buttons-control__delete {
+  min-width: 280px;
+  position: relative;
+}
+.buttons-control__delete svg {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 30px;
+}
+.buttons-control__delete:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.buttons-control__delete:hover svg path {
+  stroke: #000000;
+}
+.buttons-control .test-img {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(49, 52, 227);
+  color: red;
+  border: 2px solid red;
+}
+.buttons-control__share {
+  min-width: 209px;
+  position: relative;
+}
+.buttons-control__share svg {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 32px;
+}
+.buttons-control__share:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.buttons-control__share:hover svg path {
+  stroke: #000000;
+}
+
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 180px;
+}
+.cart__items {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
+.cart__items .characteristics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+.cart__items .characteristics__wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: -25px;
+}
+.cart__res {
+  background-color: #ffb5d9;
+  min-height: 100px;
+  max-height: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.cart__res .characteristics__cart {
+  height: 60px;
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+.cart .characteristics__buttons-wrapper {
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.cart .characteristics__result {
+  margin: 0;
+}
+.cart .characteristics__result span:last-of-type {
+  font-size: 32px;
+}
+.cart .characteristics__table {
+  empty-cells: hide;
+  margin-top: -10px;
+}
+.cart .characteristics__table .line-decor {
+  position: relative;
+}
+.cart .characteristics__table .line-decor::after {
+  content: "";
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #464646;
+}
+.cart .characteristics__counter {
+  max-width: 178px;
+}
+.cart .characteristics__counter input {
+  width: 50px;
+}
+.cart .height-row {
+  height: 30px;
+}
+.cart .characteristics__row .heading {
+  font-size: 32px;
+  color: #000000;
+}
+
+.buttons-product-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.buttons-product-item .buttons-product-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #000000;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.buttons-product-item .buttons-product-text:hover {
+  opacity: 0.6;
+}
+.buttons-product-item .buttons-product-text:hover .mark {
+  opacity: 0.6;
+}
+.buttons-product-item .buttons-product-text:active {
+  opacity: 0.2;
+}
+.buttons-product-item .like-button .mark {
+  display: block;
+  width: 25px;
+  height: 25px;
+  -webkit-mask-image: url("./../../images/vectors/like.svg");
+          mask-image: url("./../../images/vectors/like.svg");
+  background-color: #000000;
+}
+.buttons-product-item .trash-button .mark {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url("./../../images/vectors/trash.svg");
+}
+.buttons-product-item input[type=checkbox] + span.mark {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  background-color: transparent;
+  -webkit-transition: none;
+  transition: none;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+.buttons-product-item input[type=checkbox]:checked + span.mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  background-color: #000000;
+  background-image: url("./../../images/vectors/aprove.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.buttons-product-item input[type=checkbox]:hover + span.mark {
+  opacity: 0.8;
+}
+.buttons-product-item input[type=checkbox]:focus + span.mark {
+  border: 2px solid #ffb5d9;
+}
+.buttons-product-item input[type=checkbox]:disabled + span.mark {
+  opacity: 0.2;
+  cursor: auto;
+}/*# sourceMappingURL=cart.css.map */
