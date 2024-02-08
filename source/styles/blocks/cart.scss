@@ -95,14 +95,16 @@
 }
 
 .filter-input-checkbox:checked+label::after {
-	content: 'v';
+	content: '';
 	position: absolute;
 	width: 10px;
 	height: 8px;
-	top: 12px;
+	top: 24px;
 	left: 34px;
-	/* background-image: url('./../../images/icons/check-mark.svg');
-	background-repeat: no-repeat; */
+	/* background-color: red; */
+	mask-image: url('./../../images/icons/check-mark.svg');
+	background-color: #fff;
+	mask-repeat: no-repeat;
 }
 
 .filter-input-checkbox:hover+label::before {
